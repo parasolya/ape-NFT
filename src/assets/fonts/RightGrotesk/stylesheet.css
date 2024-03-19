@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Right Grotesk';
+    src: url('RightGrotesk-Medium.otf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Right Grotesk';
+    src: url('RightGrotesk-CompactBlack.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+ 

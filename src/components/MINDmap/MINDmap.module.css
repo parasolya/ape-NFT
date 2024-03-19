@@ -1,0 +1,58 @@
+.section {   
+    box-sizing: border-box;
+    width: 100%;
+    background: rgb(36, 56, 4);
+    padding: 120px 137px;  
+    text-align: center;
+  }
+  .title {
+    font-family: "Right Grotesk", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 160px;
+    line-height: 160px;  
+    margin-bottom: 80px;
+  }
+  .gridContainer {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Два стовпці рівні по ширині */
+  gap: 38px 36px;
+  
+  }
+  
+  .containerItem {
+    display: grid;
+    grid-template-columns: 1fr; /* Одна колонка */
+    grid-template-rows: auto auto; /* Дві рядки, автоматично розтягуються */
+    background: #1E1E1E;
+    box-sizing: border-box;
+    padding: 24px;
+    height: 480px;
+    border-radius: 24px;
+    /* max-width: 504px; */
+  }
+  
+  .lowerElement {
+    align-self: end; /* Прибити до нижнього краю */
+  justify-self: start; /* Прибити до лівого краю */ /* Прибити до лівого краю */
+  font-family: "Right Grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 64px;
+  text-align: left;
+  }
+  
+  .upperElement {
+    align-self: start; /* Прибити до верхнього краю */
+  justify-self: end; /* Прибити до правого краю */
+  width: 50%;  /* Прибити до правого краю */
+  text-align: left;
+  font-size: 24px;
+  line-height: 33px;
+  }
+  .upLeftArrow {
+    color: white;
+    width: 64px;
+    height: 64px;
+  }

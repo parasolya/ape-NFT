@@ -1,0 +1,105 @@
+.section {
+    position: relative;
+    box-sizing: border-box;
+    /* z-index: 15; */
+    width: 100%;
+    background: rgb(36, 56, 4);
+    padding: 107px 136px 0px 136px;
+    overflow: hidden;
+  }
+  .title {
+    font-family: "Right Grotesk", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 120px;
+    line-height: 120px;
+  
+    display: inline-block;
+    max-width: 538px;
+    text-align: left;
+  }
+
+  .title span {
+    color: #DC3B5A;
+  }
+
+  .textBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .textRight {
+    margin-top: 24px;
+    display: inline-block;
+    max-width: 409px;
+    text-align: right;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .textBoxLeft {
+    max-width: 417px;
+    text-align: center;
+    margin-top: 149px;
+  }
+  .textLeft {
+    margin-top: 36px;
+    margin-bottom: 82px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .textLeftImg {
+    width: 36px;
+    height: 36px;
+  }
+  .boxImg {
+    position: absolute;
+    /* z-index: 20; */
+    max-width: 610px;
+    max-height: 822px;
+    /* top: -136px; */
+    left: 694px;
+    bottom: 86px;
+  }
+  .heroImg {
+    width: 100%;
+  }
+  .banner {
+    position: absolute;
+    background: #DC3B5A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+    width: 1582px;
+    box-sizing: border-box;
+    padding: 6px 0 16px 0;
+
+    white-space: nowrap; 
+  overflow: hidden; 
+
+    animation: marquee 7s linear infinite; 
+  }
+  .bannerBackground {
+    position: relative;
+    background-color: #880721; 
+    width: 1582px;
+    height: 86px;
+    margin-left: -231px;
+  }
+
+  /* @keyframes marquee {
+    0% { transform: translateX(100%); } 
+    100% { transform: translateX(-100%); } 
+  } */
+  .textBanner {
+    font-family: "Right Grotesk", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 64px;
+  }
+  .textImg {
+    width: 36px;
+    height: 36px;
+    margin-top: 5px;
+  }

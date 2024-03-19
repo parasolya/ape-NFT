@@ -1,0 +1,61 @@
+.section {
+    /* position: absolute; */
+    width: 100%;
+    background: greenyellow;
+    box-sizing: border-box;
+    padding: 16px 16px 0 16px;
+    margin: 0;
+    color: #1E1E1E;
+}
+.wrapper {   
+    /* position: relative;  */
+    /* z-index: 10; */
+    background: #DC3B5A;
+    /* border: 1px solid #979797; */
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 24px 24px 78px 0;
+    border-bottom: none;
+}
+.burgerMenu {    
+    margin-left: auto;
+    
+}
+.headerLinks {
+    position: absolute;
+    z-index: 40;
+    top: 136px;
+    right: 40px;
+    /* margin-left: auto; */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.linkWrapper {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 80px;
+    height: 80px;
+    background: rgba(30, 30, 30, 0.1);
+    border-radius: 12px;
+}
+
+.link {
+    text-decoration: none;
+    color: #1E1E1E;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.linkDiscord {
+    width: 20px;
+    height: 15px;
+  }
+  
+  .linkImg {
+    width: 24px;
+    height: 24px;
+  }

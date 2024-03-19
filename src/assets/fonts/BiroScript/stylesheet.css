@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Biro Script Plus Bold US';
+    src: url('BiroScriptUSPlus-Bold.eot');
+    src: local('Biro Script Plus Bold US'), local('BiroScriptUSPlus-Bold'),
+        url('BiroScriptUSPlus-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BiroScriptUSPlus-Bold.woff2') format('woff2'),
+        url('BiroScriptUSPlus-Bold.woff') format('woff'),
+        url('BiroScriptUSPlus-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biro Script Plus';
+    src: url('BiroScriptPlus-Bold.eot');
+    src: local('Biro Script Plus Bold'), local('BiroScriptPlus-Bold'),
+        url('BiroScriptPlus-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BiroScriptPlus-Bold.woff2') format('woff2'),
+        url('BiroScriptPlus-Bold.woff') format('woff'),
+        url('BiroScriptPlus-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biro Script Plus Sloppy';
+    src: url('BiroScriptPlus-Sloppy.eot');
+    src: local('Biro Script Plus Sloppy'), local('BiroScriptPlus-Sloppy'),
+        url('BiroScriptPlus-Sloppy.eot?#iefix') format('embedded-opentype'),
+        url('BiroScriptPlus-Sloppy.woff2') format('woff2'),
+        url('BiroScriptPlus-Sloppy.woff') format('woff'),
+        url('BiroScriptPlus-Sloppy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biro Script Plus';
+    src: url('BiroScriptPlus.eot');
+    src: local('Biro Script Plus'), local('BiroScriptPlus'),
+        url('BiroScriptPlus.eot?#iefix') format('embedded-opentype'),
+        url('BiroScriptPlus.woff2') format('woff2'),
+        url('BiroScriptPlus.woff') format('woff'),
+        url('BiroScriptPlus.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biro Script Plus Sloppy US';
+    src: url('BiroScriptUSPlus-Sloppy.eot');
+    src: local('Biro Script Plus Sloppy US'), local('BiroScriptUSPlus-Sloppy'),
+        url('BiroScriptUSPlus-Sloppy.eot?#iefix') format('embedded-opentype'),
+        url('BiroScriptUSPlus-Sloppy.woff2') format('woff2'),
+        url('BiroScriptUSPlus-Sloppy.woff') format('woff'),
+        url('BiroScriptUSPlus-Sloppy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biro Script Plus US';
+    src: url('BiroScriptUSPlus-Regular.eot');
+    src: local('Biro Script Plus US'), local('BiroScriptUSPlus-Regular'),
+        url('BiroScriptUSPlus-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BiroScriptUSPlus-Regular.woff2') format('woff2'),
+        url('BiroScriptUSPlus-Regular.woff') format('woff'),
+        url('BiroScriptUSPlus-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
