@@ -4,12 +4,12 @@
     /* z-index: 15; */
     width: 100%;
     background: rgb(36, 56, 4);
-    padding: 107px 136px 0px 136px;
+    padding: 107px 204px 0px 204px;
     overflow: hidden;
   }
   .title {
     font-family: "Right Grotesk", sans-serif;
-    font-weight: bold;
+    font-weight: 900;
     font-style: normal;
     font-size: 120px;
     line-height: 120px;
@@ -39,11 +39,11 @@
   .textBoxLeft {
     max-width: 417px;
     text-align: center;
-    margin-top: 149px;
+    margin-top: 56px;
   }
   .textLeft {
     margin-top: 36px;
-    margin-bottom: 82px;
+    margin-bottom: 40px;
     font-size: 24px;
     line-height: 29px;
   }
@@ -54,10 +54,10 @@
   .boxImg {
     position: absolute;
     /* z-index: 20; */
-    max-width: 610px;
-    max-height: 822px;
+    max-width: 492px;
+    max-height: 662px;
     /* top: -136px; */
-    left: 694px;
+    left: 762px;
     bottom: 86px;
   }
   .heroImg {
