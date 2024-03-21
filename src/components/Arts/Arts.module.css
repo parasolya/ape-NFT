@@ -15,10 +15,13 @@
     margin-bottom: 80px;
   }
   .slide { 
-    width: 240px;
+    min-width: 240px;
     height: 280px;
     overflow: hidden;
     border-radius: 24px;
+    margin-left: 24px;
+
+    scroll-snap-align: start;
 }
 .img {
     width: 100%;
@@ -26,10 +29,32 @@
     object-fit: cover;
 }
 .slides {
-    display: flex;
-    gap: 24px;
+    /* display: flex; */
     transition: transform 0.5s ease; 
 }
+.container {
+  display: flex;   
+  /* width: 1056px; */
+  width: 1056px;
+  /* background: yellow; */
+  /* padding: 40px 0; */
+  overflow: hidden;
+  overflow: auto;
+  scroll-padding: 0 264px;
+  scroll-snap-type: x mandatory;
+}
+.container::-webkit-scrollbar {
+  display: none; /* Приховати полосу прокрутки у вебкіт-браузерах */
+}
+.container {
+  scrollbar-width: none; /* Приховати полосу прокрутки у Firefox */
+}
+
+
+
+
+
+
 .btnBox {   
     margin-top: 53px;
     text-align: center;
@@ -53,4 +78,9 @@ color: white;
 }
 .prev {
     margin-right: 48px;
+}
+
+.slidesInner {
+  display: flex; /* Розміщення слайдів в ряд */
+  transition: transform 0.3s ease; /* Плавний перехід між слайдами */
 }

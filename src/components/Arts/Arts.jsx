@@ -54,40 +54,114 @@ const slides = [
 
 
 const Arts = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const [slideIndex, setSlideIndex] = useState(0);
 
-    const slidesToShow = slides.slice(currentIndex, currentIndex + 4);
+  const handleNextSlide = () => {
+    const newIndex = Math.min(slideIndex + 1, slides.length - 1);
+    setSlideIndex(newIndex);
+  };
+
+  const handlePrevSlide = () => {
+    const newIndex = Math.max(slideIndex - 1, 0);
+    setSlideIndex(newIndex);
+  };
+
+  const handleButtonTouchStart = () => {
+    const slidesInner = document.querySelector('.slidesInner');
+    if (slidesInner) {
+      slidesInner.setAttribute('draggable', 'false');
+    }
+  };
+
   
-    const prevSlide = () => {
-        setCurrentIndex((currentIndex) => (currentIndex === 0 ? 0 : currentIndex - 1));
-      };
-      
-      const nextSlide = () => {
-        setCurrentIndex((currentIndex) => (currentIndex === slides.length - 4 ? slides.length - 4 : currentIndex + 1));
-      };
-    
-    return (
-        <section className={css.section}>
-          <h1 className={css.title}>COLLECTION</h1>
-          <div className={css.slider}>
-            <div className={css.slides}>
-              {slidesToShow.map((slide, index) => (
-                <div key={index} className={css.slide}>
-                  {/* <div className={css.imgBox}> */}
-                    <img className={css.img} src={slide.image} alt={slide.alt} />
-                  {/* </div> */}
-                </div>
-              ))}
-            </div>
-        <div className={css.btnBox}>
-            <button className={`${css.textDecorated } ${css.btn} ${css.prev}`} onClick={prevSlide}>Prev</button>
-            <button className={`${css.textDecorated } ${css.btn}`} onClick={nextSlide}>Next</button>
-            </div>
-            
+
+
+
+  const handleButtonTouchEnd = () => {
+    const slidesInner = document.querySelector('.slidesInner');
+    if (slidesInner) {
+      slidesInner.setAttribute('draggable', 'true');
+    }
+  };
+
+  const handleDragStart = (event, index) => {
+    event.dataTransfer.setData('index', index.toString());
+  };
+
+  const handleDragOver = (event) => {
+    event.preventDefault();
+  };
+
+  const handleDrop = (event) => {
+    const droppedIndex = parseInt(event.dataTransfer.getData('index'));
+    setSlideIndex(droppedIndex);
+  };
+
+
+
+  const handleTouchStart = () => {
+    const slidesInner = document.querySelector('.slidesInner');
+    if (slidesInner) {
+      slidesInner.setAttribute('draggable', 'false');
+    }
+  };
+  
+  const handleTouchEnd = () => {
+    const slidesInner = document.querySelector('.slidesInner');
+    if (slidesInner) {
+      slidesInner.setAttribute('draggable', 'true');
+    }
+  };
+
+  const handleDragEnd = () => {
+    const slidesInner = document.querySelector('.slidesInner');
+    if (slidesInner) {
+      slidesInner.setAttribute('draggable', 'true');
+    }
+  };
+
+  return (
+    <section className={css.section}>
+      <h1 className={css.title}>COLLECTION</h1>
+      <div className={css.slider}>
+        <div className={`${css.slides} ${css.container}`}>
+          <div
+            className={css.slidesInner}
+            style={{ transform: `translate3d(-${slideIndex * 264}px, 0, 0)` }}
+            draggable={true}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+          >
+            {slides.map((slide, index) => (
+              <div
+                key={index}
+                className={css.slide}
+                draggable={true}
+                onDragStart={(e) => handleDragStart(e, index)}
+                onDragEnd={handleDragEnd}
+              >
+                <img className={css.img} src={slide.image} alt={slide.alt} />
+              </div>
+            ))}
           </div>
-        </section>
-      );
-    
-    
+        </div>
+      </div>
+      <div className={css.btnBox}>
+        <button
+          className={`${css.textDecorated} ${css.btn} ${css.prev}`}
+          onClick={handlePrevSlide}
+        >
+          Prev
+        </button>
+        <button
+          className={`${css.textDecorated} ${css.btn}`}
+          onClick={handleNextSlide}
+        >
+          Next
+        </button>
+      </div>
+    </section>
+  );
 };
+
 export default Arts;

@@ -1,0 +1,67 @@
+.section {
+    box-sizing: border-box;
+    /* z-index: 15; */
+    width: 100%;
+    background: rgb(129, 186, 37);
+    padding: 0px 204px 120px 204px;
+    text-align: center;
+  }
+  .title {
+    font-family: "Right Grotesk", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 160px;
+    line-height: 160px;  
+    margin-bottom: 80px;
+  }
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #333;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.wrapper {
+    width: 581px;
+    margin: 0 auto
+}
+.textBoxLeft {   
+    text-align: center;
+    margin-top: 56px;
+    width: 581px;
+    margin: 0 auto
+  }
+  .textLeft {
+    margin-top: 36px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 29px;
+    height: 87px;
+  }
+  /* .textBox {
+    height: 87px;
+  } */
+  .textLeftImg {
+    width: 36px;
+    height: 36px;
+  }
+
+
+
+
+
+.text {
+    color: white;
+}
+
+.btnSubmit {
+    width: 100px;
+    height: 50px;
+}
