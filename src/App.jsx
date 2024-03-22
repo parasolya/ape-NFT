@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import MINDmap from './components/MINDmap/MINDmap';
+import ContactUs2 from './components/ContactUs/ContactUs';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,7 +24,6 @@ function App() {
         <Arts />
         <ContactUs />
         <Footer />
-        
       </div>
       
     </>

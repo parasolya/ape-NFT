@@ -1,0 +1,62 @@
+.child {
+    min-width: 200px;
+    height: 100px;
+    background: red;
+    margin: 25px;
+
+    scroll-snap-align: start;
+}
+
+.container {
+    display: flex;   
+    width: 1000px;
+    background: yellow;
+    padding: 40px 0;
+    overflow: hidden;
+    overflow: auto;
+    scroll-padding: 0 300px;
+    scroll-snap-type: x mandatory;
+}
+.container::-webkit-scrollbar {
+    display: none; /* Приховати полосу прокрутки у вебкіт-браузерах */
+  }
+  .container {
+    scrollbar-width: none; /* Приховати полосу прокрутки у Firefox */
+  }
+
+/*  */
+
+  
+.section {
+    box-sizing: border-box;
+    /* z-index: 15; */
+    width: 100%;
+    background: rgb(129, 186, 37);
+    padding: 0px 204px 120px 204px;
+    text-align: center;
+  }
+  
+  .btnBox {   
+    margin-top: 53px;
+    text-align: center;
+}
+.btn {
+    box-sizing: border-box;
+    width: 48px;
+    height: 30px;
+color: white;
+  background: inherit;
+  border: none;
+}
+.textDecorated {
+    font-family: 'Biro Script Plus';    
+    font-weight: bold;
+    font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: none;
+  
+}
+.prev {
+    margin-right: 48px;
+}

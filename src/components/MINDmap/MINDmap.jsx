@@ -22,7 +22,7 @@ const MINDmap = () => {
   <p className={css.upperElement}>Launch your own token, the proceeds of which will go to a global fund to LAUNCH YACHT CLUB AND PROMOTE it</p>
   <p className={css.lowerElement}>Token</p>
 </div>
-<div className={css.containerItem}>
+<div className={`${css.containerItem} ${css.addColor}`}>
   <img className={`${css.upperElement} ${css.upLeftArrow}`} src={upLeftArrow} alt="up Left Arrow"/>
   <p className={css.lowerElement}>Learn <br/>more <br/>in mind map</p>
 </div>

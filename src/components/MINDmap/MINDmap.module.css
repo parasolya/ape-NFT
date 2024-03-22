@@ -32,6 +32,12 @@
     border-radius: 24px;
     /* max-width: 504px; */
   }
+  .addColor {
+    background: #DC3B5A;
+  }
+  .addColor {
+    cursor: pointer;
+  }
   
   .lowerElement {
     align-self: end; /* Прибити до нижнього краю */
