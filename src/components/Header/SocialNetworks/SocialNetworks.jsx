@@ -1,8 +1,10 @@
 import css from "./SocialNetworks.module.css";
 
-const SocialNetworks = ({ isTopOfPage, }) => {
+const SocialNetworks = ({ isTopOfPage, isCloseMenu}) => {
     return (
-        <div className={css.headerLinks}>           
+        <>
+        {isCloseMenu && (<div className={css.headerLinks}> 
+
                 <div className={`${css.linkWrapper}  ${!isTopOfPage ? css.isTop : ""}`}>
                     <a className={css.link} href="#">
                         <svg className={`${css.linkDiscord}  ${!isTopOfPage ? css.isTopPage : ""}`} width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +26,8 @@ const SocialNetworks = ({ isTopOfPage, }) => {
                 </div>
               
               
-            </div>
+            </div>)}
+            </>
     )
 };
 

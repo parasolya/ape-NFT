@@ -19,6 +19,12 @@ const Header = ({ isTopOfPage, selectedPage, setSelectedPage}) => {
   const isScrolling = useScroll();
 
   useEffect(() => {
+    if (!isScrolling) {
+      setIsCloseMenu(!isCloseMenu);
+    }
+  }, [isScrolling]);
+
+  useEffect(() => {
     const handleClickOutside = (event) => {
       const navbar = document.getElementById("navbar");
       if (navbar && !navbar.contains(event.target)) {
@@ -139,7 +145,8 @@ const Header = ({ isTopOfPage, selectedPage, setSelectedPage}) => {
           </div>
           {/* RIGHT SIDE */}
 
-          <SocialNetworks  isTopOfPage={isTopOfPage}/>
+          <SocialNetworks  isCloseMenu={isCloseMenu}
+          isTopOfPage={isTopOfPage}/>
         </div>
       )}
 

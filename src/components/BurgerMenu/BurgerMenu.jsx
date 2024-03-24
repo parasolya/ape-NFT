@@ -1,10 +1,11 @@
 import css from "../BurgerMenu/BurgerMenu.module.css";
 import { Link } from "./Link/Link";
-import { useEffect } from "react";
+import useScroll from '../../hooks/useScroll';
 
 
 const BurgerMenu = ({ isTopOfPage, handleCloseMenu, isCloseMenu, selectedPage, setSelectedPage }) => {
-   
+
+    const isScrolling = useScroll();
 
     return (
         <nav className={css.wrapper}>
@@ -47,8 +48,11 @@ const BurgerMenu = ({ isTopOfPage, handleCloseMenu, isCloseMenu, selectedPage, s
             </div>
             )}
             
-            <button className={`${css.navBtn}  ${!isTopOfPage ? css.isTopPage : ""}`} onClick={handleCloseMenu}>
-            { isCloseMenu ? "CLOSE" : "MENU" }</button>            
+            {/* <button className={`${css.navBtn}  ${!isTopOfPage ? css.isTopPage : ""}`} onClick={handleCloseMenu}>
+            {!isScrolling || !isCloseMenu ? "MENU" : "CLOSE" }</button>   */}
+
+<button className={`${css.navBtn}  ${!isTopOfPage ? css.isTopPage : ""}`} onClick={handleCloseMenu}>
+            {!isCloseMenu ? "MENU" : "CLOSE" }</button>  
         </nav>
     )
 };
