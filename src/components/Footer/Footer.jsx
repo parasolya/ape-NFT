@@ -1,10 +1,9 @@
-import FooterItem from "./FooterItem/FooterItem";
 import css from "./Footer.module.css";
 
 const Footer = () => {
   return (
     <section className={css.section}>
-      <FooterItem />
+       <p className={css.text}>© Yacht ape 2024 all rights reserved</p> 
     </section>
   );
 };

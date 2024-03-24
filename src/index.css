@@ -34,10 +34,41 @@
 /*  */
 
 body {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0 auto; 
   background: #181818;
   text-transform: uppercase;
+
+  @media only screen and (min-width: 360px) and (max-width: 480px) {
+    body {
+      width: 100%; /* Повна ширина */
+      /* Додаткові стилі для мобільних пристроїв */
+    }
+  }
+  
+  /* Для планшетів */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+      width: 100%; /* Повна ширина */
+      /* Додаткові стилі для планшетів */
+    }
+  }
+  
+  /* Для маленьких десктопів */
+  @media only screen and (min-width: 769px) and (max-width: 1280px) {
+    body {
+      width: 100%; /* Повна ширина */
+      /* Додаткові стилі для маленьких десктопів */
+    }
+  }
+  
+  /* Для великих десктопів */
+  @media only screen and (min-width: 1281px) and (max-width: 1440px) {
+    body {
+      width: 1280px; /* Ширина макету для великих десктопів */
+      /* Додаткові стилі для великих десктопів */
+    }
+  }
 }
 
 h1,

@@ -1,6 +1,5 @@
 .section {
     box-sizing: border-box;
-    /* z-index: 15; */
     width: 100%;
     background: rgb(129, 186, 37);
     padding: 60px 72px 0 72px; 
@@ -63,16 +62,19 @@
 
     /*  */
 @media only screen and (min-width: 768px) {
-  min-width: 240px;
-  height: 280px;
+  margin-right: 0px;
+  min-width: 284px;
+  height: 336px;
   overflow: hidden;
-  border-radius: 24px;
+ 
   margin-left: 24px;
 
   scroll-snap-align: start;
 }
 
+
 @media only screen and (min-width: 1280px) {
+  margin-right: 0px;
   min-width: 240px;
   height: 280px;
   overflow: hidden;
@@ -86,32 +88,40 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-
-    /*  */
-@media only screen and (min-width: 768px) {
-
 }
-
-@media only screen and (min-width: 1280px) {
-
-}
-}
+/* .slider {
+  
+} */
 .slides {
     /* display: flex; */
     transition: transform 0.5s ease; 
 
-    /*  */
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 1280px) {
-
-}
 }
 .container {
   display: flex;   
-  /* width: 1056px; */
+  
+  width: 240px;
+  /* background: yellow; */
+  /* padding: 40px 0; */
+  overflow: hidden;
+  overflow: auto;
+  scroll-padding: 0 240px;
+  scroll-snap-type: x mandatory;
+
+  /*  */
+@media only screen and (min-width: 768px) {
+ 
+  width: 592px;
+  /* background: yellow; */
+  /* padding: 40px 0; */
+  overflow: hidden;
+  overflow: auto;
+  scroll-padding: 0 309px;
+  scroll-snap-type: x mandatory;
+}
+
+@media only screen and (min-width: 1280px) {
+  
   width: 1056px;
   /* background: yellow; */
   /* padding: 40px 0; */
@@ -119,14 +129,6 @@
   overflow: auto;
   scroll-padding: 0 264px;
   scroll-snap-type: x mandatory;
-
-  /*  */
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 1280px) {
-
 }
 }
 .container::-webkit-scrollbar {
@@ -136,13 +138,8 @@
   scrollbar-width: none; /* Приховати полосу прокрутки у Firefox */
 }
 
-
-
-
-
-
 .btnBox {   
-    margin-top: 53px;
+    margin-top: 24px;
     text-align: center;
     /*  */
 @media only screen and (min-width: 768px) {
@@ -155,18 +152,27 @@
 }
 .btn {
     box-sizing: border-box;
-    width: 48px;
+    width: 54px;
     height: 30px;
 color: white;
   background: inherit;
   border: none;
   /*  */
 @media only screen and (min-width: 768px) {
+  box-sizing: border-box;
 
+color: white;
+background: inherit;
+border: none;
 }
 
 @media only screen and (min-width: 1280px) {
-
+  box-sizing: border-box;
+  width: 48px;
+  height: 30px;
+color: white;
+background: inherit;
+border: none;
 }
 }
 .textDecorated {
@@ -181,9 +187,7 @@ color: white;
 
 }
 
-@media only screen and (min-width: 1280px) {
 
-}
   
 }
 .prev {
@@ -192,14 +196,12 @@ color: white;
 @media only screen and (min-width: 768px) {
 
 }
-
-@media only screen and (min-width: 1280px) {
-
-}
 }
 
 .slidesInner {
-  display: flex; /* Розміщення слайдів в ряд */
+  display: flex;
+  gap: 24px; /* Розміщення слайдів в ряд */
+  margin-left: -24px;
   transition: transform 0.3s ease; /* Плавний перехід між слайдами */
   /*  */
 @media only screen and (min-width: 768px) {

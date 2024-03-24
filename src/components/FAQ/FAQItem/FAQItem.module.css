@@ -4,7 +4,9 @@
     border-radius: 12px;
     justify-content: space-between;
     min-height: 40px;
-    margin-top: 8px;
+    max-width: 216px;
+    /* min-width: 216px; */
+    margin: 8px auto 0 auto;
     padding: 8px;
    
     /*  */
@@ -32,9 +34,12 @@
     background: #1e1e1e;
     border-radius: 12px;
     justify-content: space-between;
+    max-width: 216px;
+    /* min-width: 216px; */
     min-height: 40px;
     padding: 8px;
-    margin-top: 8px;
+    margin: 8px auto 0 auto;
+
     /* height: 158px; */
     /*  */
 @media only screen and (min-width: 768px) {
@@ -109,8 +114,7 @@
 .questionBox {
     max-width: 169px;
    text-align: left;
-   /* margin-top: 8px;
-   margin-bottom: 8px; */
+  min-width: 169px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -136,8 +140,7 @@
 }
 }
 .numberOpen {
-    margin-left: auto;
-    margin-right: 7px;
+    min-width: 23px;
     margin-top: 4px;
     margin-bottom: auto;
     font-family: 'Biro Script Plus';    
@@ -175,8 +178,7 @@
 }
 .number {    
     color: #DC3B5A;
-    margin-left: auto;
-    margin-right: 7px;
+    min-width: 23px;
     margin-top: 4px;
     margin-bottom: auto;
     font-family: 'Biro Script Plus';    
