@@ -3,6 +3,14 @@ import heroAPE1 from "../../assets/heroAPE1.png"
 import { motion } from "framer-motion";
 
 const Hero = ({ setSelectedPage }) => {
+
+    function scrollToMint() {
+        const heroSection = document.getElementById("mmap");
+        if (heroSection) {
+          heroSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+
     return (
         <section id="hero" className={css.section}>
             <motion.div
@@ -22,7 +30,7 @@ const Hero = ({ setSelectedPage }) => {
                 <div className={css.boxImg}><img className={css.heroImg} src={heroAPE1} alt='hero Ape 1' /></div>
                 <div className={css.infoBox}>                
                 <p className={css.textInfo}>Yacht Ape is a collection of unique digital apes that you can own in NFT format</p>
-                <button className={css.heroBtn}>MEET APES</button>
+                <button className={css.heroBtn} onClick={() => scrollToMint()}>MEET APES</button>
                 </div>
             </div>
         </div>
