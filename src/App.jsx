@@ -8,25 +8,12 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import MINDmap from './components/MINDmap/MINDmap';
-import ContactUs2 from './components/ContactUs/ContactUs';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("hero");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
 
-
-  // useEffect(() => {
-  //   
-  //   const handleScroll = () => {
-  //     if (window.scrollY === 0) {
-  //       setIsTopOfPage(true);
-  //       setSelectedPage("hero");
-  //     }
-  //     if (window.scrollY !== 0) setIsTopOfPage(false);
-  //   };
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
+  
 
   useEffect(() => {
     const aboutSection = document.getElementById("about");
