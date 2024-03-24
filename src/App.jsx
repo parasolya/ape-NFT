@@ -16,8 +16,8 @@ function App() {
   return (
     <>
       <div className='app'>
-        <Header className='header'/>
-        <Hero />
+        <Header />
+        <Hero />        
         <About />
         <MINDmap />
         <FAQ />

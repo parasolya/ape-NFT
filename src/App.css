@@ -43,10 +43,10 @@
 
 .app {
   position: relative;
-  /* z-index: 1; */
+  /* z-index: 100; */
+  /* height: 693px; */
   /* background: red; */
 }
 
-.header {
-  position: absolute;
-}
+
+

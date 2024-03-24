@@ -5,13 +5,27 @@
   display: flex;
 }
 .navBtn {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 80px;
-    height: 80px;
-    color: #1E1E1E;
-    text-transform: uppercase;
-    background: rgba(30, 30, 30, 0.1);
-    border: none;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 80px;
+  height: 80px;
+  color: #1E1E1E;
+  text-transform: uppercase;
+  background: rgba(30, 30, 30, 0.1);
+  border: none;
+  transition: color 0.3s, text-decoration 0.3s; /* Плавний перехід стилів */
+
+  font-family: Messina Sans Mono, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
 }
+
+.navBtn:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+

@@ -113,12 +113,15 @@
   line-height: 34px;
   color: white;
   cursor: pointer;
+  
 }
+/* .navBtn span {
+  pointer-events: none; 
+} */
 .whiteText {
-  color: white;
+  color: white !important;
 }
-.btnSubmit:hover,
-.btnSubmit:focus {
+.btnSubmit:hover {
   color: #1e1e1e;
 }
 .form {

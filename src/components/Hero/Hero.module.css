@@ -1,89 +1,228 @@
 .section {
-  position: relative;
+  /* position: relative; */
   box-sizing: border-box;
   /* z-index: 15; */
   width: 100%;
-  background: greenyellow;
-  padding: 0 16px 0 16px;
+  background:grey;
+  padding: 54px 16px 0 16px;
   color: #1E1E1E;
+  @media only screen and (min-width: 768px) {
+
+  }
+
+  @media only screen and (min-width: 1280px) {
+    padding: 16px 16px 0 16px;
+    position: absolute;
+    z-index: 20;
+
+  }
 }
 .wrapper {
   background: #dc3b5a;
   /* border: 1px solid #979797; */
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
+  border-radius: 24px;
   display: flex;
   flex-direction: column;
-  border-top: none;
   box-sizing: border-box;
-  padding: 0 120px 110px 120px;
-  /* border-bottom: none; */
+  padding: 36px 64px 20px 64px;
+
+  @media only screen and (min-width: 768px) {
+    padding: 197px 120px 110px 120px;
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    padding: 197px 120px 110px 120px;
+  }
 }
 .title {
   font-family: "Right Grotesk", sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 188px;
-  line-height: 188px;
+  font-size: 44px;
+  line-height: 44px;
 
   display: flex;
   justify-content: space-between;
+  width: 209px;
+
+  @media only screen and (min-width: 768px) {
+font-size: 188px;
+  line-height: 188px;
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    font-size: 188px;
+    line-height: 188px;
+  }
 }
 
 .textDecorated {
     font-family: 'Biro Script Plus';    
     font-weight: bold;
     font-style: normal;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 16px;
+  line-height: 27px;
   text-transform: none;
+  
+  @media only screen and (min-width: 768px) {    
+    font-size: 24px;
+    line-height: 40px;
+  }
+  
+  @media only screen and (min-width: 1280px) {    
+    font-size: 24px;
+    line-height: 40px;
+  }
 }
 .textInfo {
-  font-size: 16px;
-  line-height: 22px;
-  text-transform: uppercase;
-  text-align: justify;
+  font-size: 12px;
+  line-height: 14px;
+  /* text-align: justify; */
+  
+
+  @media only screen and (min-width: 768px) {
+    text-align: justify;
   text-indent: 48px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    text-align: justify;
+  text-indent: 48px;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 .textBox {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  /* gap: 412px; */
-  margin-left: auto;
-  margin-top: 36px;
-  margin-left: 176px;
+  margin-left: auto; */
+  /* margin-top: 36px;
+  margin-left: 176px; */
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 412px; */
+    margin-left: auto;
+    margin-top: 36px;
+    margin-left: 176px;
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 412px; */
+    margin-left: auto;
+    margin-top: 36px;
+    margin-left: 176px;
+  }
 }
 .infoBox {
-  width: 337px;
+  position: relative;
+  width: 216px;
   box-sizing: border-box;
-  padding-top: 8px;
+  padding-top: 49px;
+
+  @media only screen and (min-width: 768px) {
+    width: 337px;
+    box-sizing: border-box;
+    padding-top: 8px;
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    width: 337px;
+    box-sizing: border-box;
+    padding-top: 8px;
+  }
 }
 .heroBtn {
+  position: absolute;
+  z-index: 100;
+  top: -4px;
   box-sizing: border-box;
-  margin-top: 28px;
-  width: 337px;
-  height: 70px;
+  
+  width: 216px;
+  height: 41px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   
   border: none;
-  border-radius: 24px;
+  border-radius: 8px;
   background: rgba(30, 30, 30, 0.1);
 
   font-family: "Right Grotesk", sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 28px;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+
+  @media only screen and (min-width: 768px) {
+    box-sizing: border-box;
+    margin-top: 28px;
+    width: 337px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    
+    border: none;
+    border-radius: 24px;
+    background: rgba(30, 30, 30, 0.1);
+  
+    font-family: "Right Grotesk", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 28px;
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    box-sizing: border-box;
+    margin-top: 28px;
+    width: 337px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    
+    border: none;
+    border-radius: 24px;
+    background: rgba(30, 30, 30, 0.1);
+  
+    font-family: "Right Grotesk", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 28px;
+  }
 }
 .boxImg {
-  position: absolute;
-  z-index: 20;
-  max-width: 511px;
-  max-height: 675px;
-  top: -136px;
-  left: 437px;
+  width: 216px;
+    height: 284px;
+
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    z-index: 20;
+    max-width: 511px;
+    max-height: 675px;
+    bottom: 0;
+    left: 437px;  
+    
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    position: absolute;
+    z-index: 20;
+    max-width: 511px;
+    max-height: 675px;
+    bottom: 0;
+    left: 437px;
+  }
 }
 .heroImg {
   width: 100%;

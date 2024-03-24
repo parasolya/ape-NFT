@@ -144,6 +144,7 @@ const ContactUs = () => {
               // errors.discordUsername || errors.walletAddress
               //   ? "ERROR"
               //   :
+              
               isSubmitSuccess ? "MINTED" : "MINT"
             }
           </button>

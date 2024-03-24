@@ -2,16 +2,38 @@
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    width: 80px;
+   
+
+    @media only screen and (min-width: 1280px) {
+        
+    width: 180px;
     height: 80px;
     background: rgba(30, 30, 30, 0.1);
+       
+        width: 80px;
+    height: 80px;
+        }
+    
 }
 
 .link {
     text-decoration: none;
-    color: #1E1E1E;
-    text-transform: uppercase;
-    padding: 20px 10px;
+   
+    /* text-transform: uppercase; */
+    
     font-weight: 600;
     /* padding-bottom: 20px; */
+    font-size: 24px;
+  line-height: 29px;
+  color: white;
+    @media only screen and (min-width: 1280px) {
+        color: #1E1E1E;
+        padding: 20px 10px;  
+    font-size: 16px;
+    line-height: 19px;
+    }
 }
+.link:hover {
+    color: white;
+    text-decoration: underline;
+  }

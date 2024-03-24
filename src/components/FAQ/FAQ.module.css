@@ -1,19 +1,54 @@
 .section {
-    /* position: relative; */
     box-sizing: border-box;
     /* z-index: 15; */
     width: 100%;
     background: rgb(36, 56, 4);
-    padding: 0px 204px 120px 204px;
+    padding: 60px 72px 0 72px; 
     text-align: center;
+    /*  */
+@media only screen and (min-width: 768px) {
+  box-sizing: border-box;
+  /* z-index: 15; */
+  width: 100%;
+  background: rgb(36, 56, 4);
+  padding: 0px 204px 120px 204px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1280px) {
+  box-sizing: border-box;
+  /* z-index: 15; */
+  width: 100%;
+  background: rgb(36, 56, 4);
+  padding: 0px 204px 120px 204px;
+  text-align: center;
+}
   }
   .title {
     font-family: "Right Grotesk", sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 160px;
-    line-height: 160px;  
-    margin-bottom: 80px;
+    font-size: 44px;
+    line-height: 40px;  
+    margin-bottom: 24px;
+    /*  */
+@media only screen and (min-width: 768px) {
+  font-family: "Right Grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 160px;
+  line-height: 160px;  
+  margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 1280px) {
+  font-family: "Right Grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 160px;
+  line-height: 160px;  
+  margin-bottom: 80px;
+}
   }
   /* .apeArreyWrapper {
     display: flex;
