@@ -5,6 +5,7 @@ import FAQItem1 from "../../assets/FAQItem1.png";
 import FAQItem2 from "../../assets/FAQItem2.png";
 import FAQItem3 from "../../assets/FAQItem3.png";
 import FAQItem4 from "../../assets/FAQItem4.png";
+import { motion } from "framer-motion";
 
 const apeArray = [
   {
@@ -37,7 +38,7 @@ const apeArray = [
   },
 ];
 
-const FAQ = () => {
+const FAQ = ({ setSelectedPage }) => {
   const [openIndex, setOpenIndex] = useState(1);
 
   const handleItemClick = (index) => {
@@ -45,7 +46,11 @@ const FAQ = () => {
   };
 
   return (
-    <section className={css.section}>
+    <section id="faq" className={css.section}>
+           <motion.div
+        // className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
+        onViewportEnter={() => setSelectedPage("faq")}
+      >
       <h1 className={css.title}>FAQ</h1>
       <div className={css.apeArrayWrapper}>
         {apeArray.map((item, index) => (
@@ -60,6 +65,7 @@ const FAQ = () => {
           />
         ))}
       </div>
+      </motion.div>
     </section>
   );
 };

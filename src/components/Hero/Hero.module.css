@@ -1,5 +1,5 @@
 .section {
-  /* position: relative; */
+  
   box-sizing: border-box;
   /* z-index: 15; */
   width: 100%;
@@ -12,7 +12,7 @@
 
   @media only screen and (min-width: 1280px) {
     padding: 16px 16px 0 16px;
-    position: absolute;
+    position: relative;
     z-index: 20;
 
   }
@@ -31,7 +31,9 @@
   }
   
   @media only screen and (min-width: 1280px) {
-    padding: 197px 120px 110px 120px;
+    padding: 197px 188px 110px 188px;
+/* 204 */
+   
   }
 }
 .title {
@@ -51,8 +53,11 @@ font-size: 188px;
   }
   
   @media only screen and (min-width: 1280px) {
-    font-size: 188px;
-    line-height: 188px;
+    
+    font-weight: 900;
+    width: 1019px;
+    font-size: 164px;
+    line-height: 164px;
   }
 }
 
@@ -88,10 +93,11 @@ font-size: 188px;
   }
   
   @media only screen and (min-width: 1280px) {
+    height: 57px;
     text-align: justify;
-  text-indent: 48px;
-    font-size: 16px;
-    line-height: 22px;
+  text-indent: 50px;
+  font-size: 16px;
+  line-height: 19px;
   }
 }
 .textBox {
@@ -159,9 +165,10 @@ font-size: 188px;
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
-  color: white;
+  /* color: white; */
 
   @media only screen and (min-width: 768px) {
+    position: static;
     box-sizing: border-box;
     margin-top: 28px;
     width: 337px;
@@ -182,6 +189,7 @@ font-size: 188px;
   }
   
   @media only screen and (min-width: 1280px) {
+    position: static;
     box-sizing: border-box;
     margin-top: 28px;
     width: 337px;
@@ -198,8 +206,11 @@ font-size: 188px;
     font-family: "Right Grotesk", sans-serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 28px;
+    
   }
+}
+.heroBtn:hover {
+  color: white;
 }
 .boxImg {
   width: 216px;
@@ -208,8 +219,8 @@ font-size: 188px;
   @media only screen and (min-width: 768px) {
     position: absolute;
     z-index: 20;
-    max-width: 511px;
-    max-height: 675px;
+    width: 511px;
+    height: 675px;
     bottom: 0;
     left: 437px;  
     
@@ -218,8 +229,8 @@ font-size: 188px;
   @media only screen and (min-width: 1280px) {
     position: absolute;
     z-index: 20;
-    max-width: 511px;
-    max-height: 675px;
+    width: 463px;
+    height: 612px;
     bottom: 0;
     left: 437px;
   }

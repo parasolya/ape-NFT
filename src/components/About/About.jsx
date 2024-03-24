@@ -3,9 +3,13 @@ import addSharp from "../../assets/add-sharp.svg";
 import heroAPE2 from "../../assets/heroAPE2.png";
 import { motion } from "framer-motion";
 
-const About = () => {
+const About = ({ setSelectedPage }) => {
   return (
-    <section className={css.section}>
+    <section id="about" className={css.section}>
+           <motion.div
+        // className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
+        onViewportEnter={() => setSelectedPage("about")}
+      >
       <div className={css.textBox}>
         <h1 className={css.title}>
           a Story that started with <span>one simple <br/>ape</span>
@@ -40,7 +44,7 @@ const About = () => {
           <img className={css.textImg} src={addSharp} alt="icon cross" />
         </div>
       </div>
-      {/* </div> */}
+      </motion.div>
     </section>
   );
 };

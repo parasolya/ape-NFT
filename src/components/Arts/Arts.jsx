@@ -23,7 +23,7 @@ import Ape20 from "../../assets/slides/ape20.png";
 import Ape21 from "../../assets/slides/ape21.png";
 import Ape22 from "../../assets/slides/ape22.png";
 import Ape23 from "../../assets/slides/ape23.png";
-
+import { motion } from "framer-motion";
 
 
 const slides = [
@@ -113,7 +113,7 @@ const Arts = () => {
     }
   };
 
-  const handleDragEnd = () => {
+  const handleDragEnd = ({ setSelectedPage }) => {
     const slidesInner = document.querySelector('.slidesInner');
     if (slidesInner) {
       slidesInner.setAttribute('draggable', 'true');
@@ -121,7 +121,7 @@ const Arts = () => {
   };
 
   return (
-    <section className={css.section}>
+    <section id="arts" className={css.section}>
       <h1 className={css.title}>COLLECTION</h1>
       <div className={css.slider}>
         <div className={`${css.slides} ${css.container}`}>

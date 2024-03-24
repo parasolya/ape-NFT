@@ -28,4 +28,12 @@
   text-decoration: underline;
 }
 
+.isTopPage {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
 
+.isTopPage.isTopPage:hover  {
+  color: #dc3b5a !important;
+  
+}

@@ -1,10 +1,14 @@
 import css from "./Hero.module.css";
 import heroAPE1 from "../../assets/heroAPE1.png"
+import { motion } from "framer-motion";
 
-
-const Hero = () => {
+const Hero = ({ setSelectedPage }) => {
     return (
-        <section className={css.section}>
+        <section id="hero" className={css.section}>
+            <motion.div
+        // className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
+        onViewportEnter={() => setSelectedPage("hero")}
+      >
         <div className={css.wrapper}>
         <div>
             <p className={css.textDecorated}>diD yOu seE iT ?</p>
@@ -23,7 +27,7 @@ const Hero = () => {
             </div>
         </div>
         </div>
-        
+        </motion.div>
         </section>
     )
 };

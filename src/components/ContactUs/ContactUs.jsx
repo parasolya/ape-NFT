@@ -4,10 +4,11 @@ import { useState, useEffect } from "react";
 import addSharp from "../../assets/add-sharp.svg";
 import discordIcon from "../../assets/discord-icon.svg";
 import metaMaskIcon from "../../assets/metaMask-icon-color.svg";
+import { motion } from "framer-motion";
 
 const validDiscord = true;
 
-const ContactUs = () => {
+const ContactUs = ({ setSelectedPage }) => {
   const {
     register,
     trigger,
@@ -47,7 +48,11 @@ const ContactUs = () => {
   };
 
   return (
-    <section className={css.section}>
+    <section id="mint" className={css.section}>
+       <motion.div
+        // className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
+        onViewportEnter={() => setSelectedPage("mint")}
+      >
       <h1 className={css.title}>Are you in?</h1>
       <div className={css.wrapper}>
         <div className={css.textBoxLeft}>
@@ -170,6 +175,7 @@ const ContactUs = () => {
           </div>
         )}
       </div>
+      </motion.div>
     </section>
   );
 };

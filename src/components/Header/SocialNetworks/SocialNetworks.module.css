@@ -14,8 +14,8 @@
     @media only screen and (min-width: 1280px) {
         position: absolute;
         z-index: 40;
-        top: 136px;
-        right: 40px;
+        top: 100px;
+        right: 112px;
     }
 }
 .linkWrapper {
@@ -46,7 +46,23 @@
     padding: 20px;
 }
 
+
+
   .linkImg:hover path,
   .linkDiscord:hover path {
     fill: white !important;
+}
+
+.linkImg.isTopPage path,
+.linkDiscord.isTopPage path {
+    fill: white;
+}
+
+
+  .linkImg.isTopPage:hover path,
+  .linkDiscord.isTopPage:hover path {
+    fill: #dc3b5a !important;
+  }
+  .isTop {
+    background: rgba(255, 255, 255, 0.1);
 }

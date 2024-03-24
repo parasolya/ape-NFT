@@ -3,22 +3,51 @@ import { Link } from "./Link/Link";
 import { useEffect } from "react";
 
 
-const BurgerMenu = ({ page, handleCloseMenu, isCloseMenu }) => {
-
+const BurgerMenu = ({ isTopOfPage, handleCloseMenu, isCloseMenu, selectedPage, setSelectedPage }) => {
+   
 
     return (
         <nav className={css.wrapper}>
-            {isCloseMenu && (<div className={css.linkList}>
+            {isCloseMenu && (<div className={css.linkList}>              
                 
-            <Link page="Mint" />
-            <Link page="Arts" />
-            <Link page="Faq" />
-            <Link page="M-map" />
-            <Link page="About" />
+                <Link 
+            page="About" 
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            isTopOfPage={isTopOfPage}
+            />
+            <Link 
+            page="M-map"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            isTopOfPage={isTopOfPage}
+            />
+               <Link 
+            page="Faq"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            isTopOfPage={isTopOfPage}
+             />
+             <Link 
+            page="Arts"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            isTopOfPage={isTopOfPage}
+             />
+            <Link 
+            page="Mint"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            isTopOfPage={isTopOfPage}
+            />
+            
+         
+            
+           
             </div>
             )}
             
-            <button className={css.navBtn} onClick={handleCloseMenu}>
+            <button className={`${css.navBtn}  ${!isTopOfPage ? css.isTopPage : ""}`} onClick={handleCloseMenu}>
             { isCloseMenu ? "CLOSE" : "MENU" }</button>            
         </nav>
     )

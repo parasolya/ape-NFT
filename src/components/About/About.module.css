@@ -1,3 +1,8 @@
+/* .textRight  br {
+  @media only screen and (max-width: 767px) {
+    display: none;
+  } */
+
 .section {
     position: relative;
     box-sizing: border-box;
@@ -45,9 +50,8 @@
   font-size: 120px;
   line-height: 120px;
 
-  display: inline-block;
-  max-width: 538px;
-  text-align: left;
+  width: 216px;
+
 }
 
 @media only screen and (min-width: 1280px) {
@@ -58,15 +62,23 @@
   line-height: 120px;
 
   display: inline-block;
-  max-width: 538px;
-  text-align: left;
+  width: 538px;
+  max-width: 538px;  
+  /* min-height: 200px; */
+
 }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .title span br {
+      display: none; /* Приховати <br> у великих екранах */
+    }
   }
 
   .title span {
     color: #DC3B5A;
   }
-
+ 
   .textBox {
     
 
@@ -176,9 +188,10 @@
   height: 36px;
 }
   }
+
   .boxImg {    
     min-width: 216px;
-    height: 292px;
+    max-height: 292px;
 
     /*  */
 @media only screen and (min-width: 768px) {

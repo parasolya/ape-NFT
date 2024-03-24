@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import About from './components/About/About';
 import Arts from './components/Arts/Arts';
@@ -11,19 +11,56 @@ import MINDmap from './components/MINDmap/MINDmap';
 import ContactUs2 from './components/ContactUs/ContactUs';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [selectedPage, setSelectedPage] = useState("hero");
+  const [isTopOfPage, setIsTopOfPage] = useState(true);
+
+
+  // useEffect(() => {
+  //   
+  //   const handleScroll = () => {
+  //     if (window.scrollY === 0) {
+  //       setIsTopOfPage(true);
+  //       setSelectedPage("hero");
+  //     }
+  //     if (window.scrollY !== 0) setIsTopOfPage(false);
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
+
+  useEffect(() => {
+    const aboutSection = document.getElementById("about");
+    
+    const handleScroll = () => {
+      const aboutSectionPosition = aboutSection.getBoundingClientRect().top;
+      if (aboutSectionPosition < 0) {
+        setIsTopOfPage(false);
+      } else {
+        setIsTopOfPage(true);
+        setSelectedPage("hero");
+      }
+    };
+    
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
       <div className='app'>
-        <Header />
-        <Hero />        
-        <About />
-        <MINDmap />
-        <FAQ />
-        <Arts />
-        <ContactUs />
-        <Footer />
+      <Hero setSelectedPage={setSelectedPage}/> 
+        <Header 
+        selectedPage={selectedPage} setSelectedPage={setSelectedPage}
+        isTopOfPage={isTopOfPage}
+        />
+               
+        <About setSelectedPage={setSelectedPage}/>
+        <MINDmap setSelectedPage={setSelectedPage}/>
+        <FAQ setSelectedPage={setSelectedPage}/>
+        <Arts setSelectedPage={setSelectedPage}/>
+        <ContactUs setSelectedPage={setSelectedPage}/>
+        <Footer setSelectedPage={setSelectedPage}/>
       </div>
       
     </>

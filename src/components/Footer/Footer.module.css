@@ -3,7 +3,11 @@
     box-sizing: border-box;
     /* z-index: 15; */
     width: 100%;
-    background: rgb(129, 186, 37);
+    /* background: rgb(129, 186, 37); */
     padding: 40px 0px;
     text-align: center;
+
+   
+  font-size: 16px;
+  line-height: 19px;
   }

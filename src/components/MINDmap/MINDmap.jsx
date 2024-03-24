@@ -1,11 +1,14 @@
 import css from "../MINDmap/MINDmap.module.css";
 import upLeftArrow from "../../assets/up-left-arrow.svg"
+import { motion } from "framer-motion";
 
-
-const MINDmap = () => {
+const MINDmap = ({ setSelectedPage }) => {
     return (
-        <section className={css.section}>
-        
+        <section id="mmap" className={css.section}>
+        <motion.div
+        // className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
+        onViewportEnter={() => setSelectedPage("mmap")}
+      >
         <h1 className={css.title}>MIND map</h1>
         
         <div className={css.gridContainer}>
@@ -29,6 +32,7 @@ const MINDmap = () => {
 
 
 </div>
+</motion.div>
         </section>
     )
 };
