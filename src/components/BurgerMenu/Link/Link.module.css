@@ -55,6 +55,9 @@
 .link.isTopPage:hover {
   color: #dc3b5a;
 }
-.isTop {
-  background: rgba(255, 255, 255, 0.1);
+
+@media only screen and (min-width: 768px) {
+  .isTop {
+    background: rgba(255, 255, 255, 0.1);
+  }
 }

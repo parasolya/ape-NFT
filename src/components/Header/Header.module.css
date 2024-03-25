@@ -83,7 +83,7 @@
   width: 100vw;
   min-height: 100vh;
 
-  background: yellow;
+  background: #181818;
   text-align: center;
 }
 
@@ -123,11 +123,10 @@
   margin-bottom: 0;
   padding-top: 62px;
   height: 264px;
+  background: transparent;
 }
 
 .mainPart {
-  /* min-height: 523px; */
-  background: #9f7171;
   max-height: 493px;
   width: 100%;
   align-items: center;
@@ -152,9 +151,9 @@
   align-items: center;
   width: 48px;
   height: 48px;
-  color: #1e1e1e;
+  color: white;
   text-transform: uppercase;
-  background: rgba(30, 30, 30, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   border-width: 0;
   border-radius: 8px;
   margin-bottom: 10px;
