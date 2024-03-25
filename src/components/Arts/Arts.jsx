@@ -1,5 +1,5 @@
 import css from "../Arts/Arts.module.css";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
 import Ape1 from "../../assets/slides/ape1.png";
 import Ape2 from "../../assets/slides/ape2.png";
 import Ape3 from "../../assets/slides/ape3.png";
@@ -25,36 +25,56 @@ import Ape22 from "../../assets/slides/ape22.png";
 import Ape23 from "../../assets/slides/ape23.png";
 import { motion } from "framer-motion";
 
-
 const slides = [
-    { image: Ape1, alt: 'Ape 1' },
-    { image: Ape2, alt: 'Ape 2' },
-    { image: Ape3, alt: 'Ape 3' },
-    { image: Ape4, alt: 'Ape 4' },
-    { image: Ape5, alt: 'Ape 5' },
-    { image: Ape6, alt: 'Ape 6' },
-    { image: Ape7, alt: 'Ape 7' },
-    { image: Ape8, alt: 'Ape 8' },
-    { image: Ape9, alt: 'Ape 9' },
-    { image: Ape10, alt: 'Ape 10' },
-    { image: Ape11, alt: 'Ape 11' },
-    { image: Ape12, alt: 'Ape 12' },
-    { image: Ape13, alt: 'Ape 13' },
-    { image: Ape14, alt: 'Ape 14' },
-    { image: Ape15, alt: 'Ape 15' },
-    { image: Ape16, alt: 'Ape 16' },
-    { image: Ape17, alt: 'Ape 17' },
-    { image: Ape18, alt: 'Ape 18' },
-    { image: Ape19, alt: 'Ape 19' },
-    { image: Ape20, alt: 'Ape 20' },
-    { image: Ape21, alt: 'Ape 21' },
-    { image: Ape22, alt: 'Ape 22' },
-    { image: Ape23, alt: 'Ape 23' },    
-  ];
-
+  { image: Ape1, alt: "Ape 1" },
+  { image: Ape2, alt: "Ape 2" },
+  { image: Ape3, alt: "Ape 3" },
+  { image: Ape4, alt: "Ape 4" },
+  { image: Ape5, alt: "Ape 5" },
+  { image: Ape6, alt: "Ape 6" },
+  { image: Ape7, alt: "Ape 7" },
+  { image: Ape8, alt: "Ape 8" },
+  { image: Ape9, alt: "Ape 9" },
+  { image: Ape10, alt: "Ape 10" },
+  { image: Ape11, alt: "Ape 11" },
+  { image: Ape12, alt: "Ape 12" },
+  { image: Ape13, alt: "Ape 13" },
+  { image: Ape14, alt: "Ape 14" },
+  { image: Ape15, alt: "Ape 15" },
+  { image: Ape16, alt: "Ape 16" },
+  { image: Ape17, alt: "Ape 17" },
+  { image: Ape18, alt: "Ape 18" },
+  { image: Ape19, alt: "Ape 19" },
+  { image: Ape20, alt: "Ape 20" },
+  { image: Ape21, alt: "Ape 21" },
+  { image: Ape22, alt: "Ape 22" },
+  { image: Ape23, alt: "Ape 23" },
+];
 
 const Arts = () => {
   const [slideIndex, setSlideIndex] = useState(0);
+  const [transformValue, setTransformValue] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width >= 1280) {
+        setTransformValue(-slideIndex * 264);
+      } else if (width >= 768) {
+        setTransformValue(-slideIndex * 308);
+      } else {
+        setTransformValue(-slideIndex * 240);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [slideIndex]);
 
   const handleNextSlide = () => {
     const newIndex = Math.min(slideIndex + 1, slides.length - 1);
@@ -66,57 +86,28 @@ const Arts = () => {
     setSlideIndex(newIndex);
   };
 
-  const handleButtonTouchStart = () => {
-    const slidesInner = document.querySelector('.slidesInner');
-    if (slidesInner) {
-      slidesInner.setAttribute('draggable', 'false');
-    }
-  };
-
-  
-
-
-
-  const handleButtonTouchEnd = () => {
-    const slidesInner = document.querySelector('.slidesInner');
-    if (slidesInner) {
-      slidesInner.setAttribute('draggable', 'true');
-    }
-  };
-
   const handleDragStart = (event, index) => {
-    event.dataTransfer.setData('index', index.toString());
+    event.dataTransfer.setData("index", index.toString());
   };
-
-  const handleDragOver = (event) => {
-    event.preventDefault();
-  };
-
-  const handleDrop = (event) => {
-    const droppedIndex = parseInt(event.dataTransfer.getData('index'));
-    setSlideIndex(droppedIndex);
-  };
-
-
 
   const handleTouchStart = () => {
-    const slidesInner = document.querySelector('.slidesInner');
+    const slidesInner = document.querySelector(".slidesInner");
     if (slidesInner) {
-      slidesInner.setAttribute('draggable', 'false');
+      slidesInner.setAttribute("draggable", "false");
     }
   };
-  
+
   const handleTouchEnd = () => {
-    const slidesInner = document.querySelector('.slidesInner');
+    const slidesInner = document.querySelector(".slidesInner");
     if (slidesInner) {
-      slidesInner.setAttribute('draggable', 'true');
+      slidesInner.setAttribute("draggable", "true");
     }
   };
 
   const handleDragEnd = ({ setSelectedPage }) => {
-    const slidesInner = document.querySelector('.slidesInner');
+    const slidesInner = document.querySelector(".slidesInner");
     if (slidesInner) {
-      slidesInner.setAttribute('draggable', 'true');
+      slidesInner.setAttribute("draggable", "true");
     }
   };
 
@@ -127,7 +118,7 @@ const Arts = () => {
         <div className={`${css.slides} ${css.container}`}>
           <div
             className={css.slidesInner}
-            style={{ transform: `translate3d(-${slideIndex * 264}px, 0, 0)` }}
+            style={{ transform: `translate3d(${transformValue}px, 0, 0)` }}
             draggable={true}
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}

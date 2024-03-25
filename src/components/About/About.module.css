@@ -1,315 +1,301 @@
-/* .textRight  br {
-  @media only screen and (max-width: 767px) {
-    display: none;
-  } */
-
 .section {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 60px 72px 0 72px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    position: static;
+    box-sizing: border-box;
+    width: 100%;
+    background: rgb(36, 56, 4);
+    padding: 40px 88px 40px 88px;
+    overflow: hidden;
+    /* max-width: 768px */
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .section {
     position: relative;
     box-sizing: border-box;
     width: 100%;
     background: rgb(36, 56, 4);
-    padding: 60px 72px 0 72px;
+    padding: 107px 204px 0px 204px;
     overflow: hidden;
+  }
 }
-    
-@media only screen and (min-width: 768px) {
-  .section {
+
+.content {
   position: static;
-  box-sizing: border-box;
-  width: 100%;
-  background: rgb(36, 56, 4);
-  padding: 40px 88px 40px 88px;
-  overflow: hidden;
-  /* max-width: 768px */
 }
+@media only screen and (min-width: 768px) {
+  .context {
+    position: relative;
+    padding-bottom: 40px;
+  }
 }
 @media only screen and (min-width: 1280px) {
-  .section {
-  position: relative;
-  box-sizing: border-box;
-  width: 100%;
-  background: rgb(36, 56, 4);
-  padding: 107px 204px 0px 204px;
-  overflow: hidden;
-}
-  }
- 
   .content {
-    position: static; /* Встановлюємо позиціонування батька на relative */
+    padding-bottom: 40px;
+  }
 }
-    @media only screen and (min-width: 768px) {
-      .context {
-      position: relative;
-      padding-bottom: 40px;
-    }
-  }
-  @media only screen and (min-width: 1280px) {
-    .content{
-padding-bottom: 40px;
-    }
-  }
-  .title {
-    font-family: "Right Grotesk", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 40px;
-    line-height: 40px;
-  
-    display: inline-block;
-    width: 216px;
-    min-height: 200px;
-    text-align: left;
-  }
+.title {
+  font-family: "Right Grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
 
-  @media only screen and (min-width: 768px) {
-    .title {
-        font-size: 60px;
-        line-height: 60px;
-        width: 269px;
-    }
+  display: inline-block;
+  width: 216px;
+  min-height: 200px;
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 60px;
+    line-height: 60px;
+    width: 269px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
-    .title {
-        font-size: 120px;
-        line-height: 120px;
-        width: 538px;
-        max-width: 538px;
-    }
+  .title {
+    font-size: 120px;
+    line-height: 120px;
+    width: 538px;
+    max-width: 538px;
+  }
 }
 
 .title span br {
-    display: none;
+  display: none;
 }
 
-
-  .title span {
-    color: #DC3B5A;
-  }
+.title span {
+  color: #dc3b5a;
+}
 
 @media only screen and (min-width: 768px) {
   .textBox {
-  display: flex;
-  justify-content: space-between;
-}
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
   .textBox {
-  display: flex;
-  justify-content: space-between;
-}
+    display: flex;
+    justify-content: space-between;
   }
-  
-  .textRight {
-    margin-top: 16px;
-    display: inline-block;
-    max-width: 400px;
-    text-align: right;
-    font-size: 16px;
-    line-height: 19px;
-    /* text-align: justify; */
-    text-indent: 98px;
-    word-spacing: -1px;
-
-    height: 133px;
-    /*  */
-@media only screen and (min-width: 768px) {
-  text-indent: 0px;
-  margin-top: 24px;
-  display: inline-block;
-  max-width: 275px;
- 
 }
 
-@media only screen and (min-width: 1280px) {
-  margin-top: 24px;
+.textRight {
+  margin-top: 16px;
   display: inline-block;
   max-width: 400px;
+  text-align: right;
+  font-size: 16px;
+  line-height: 19px;
+  /* text-align: justify; */
   text-indent: 98px;
-  font-size: 24px;
-  line-height: 29px;
+  word-spacing: -1px;
+
+  height: 133px;
 }
+
+@media only screen and (min-width: 768px) {
+  .textRight {
+    text-indent: 0px;
+    margin-top: 24px;
+    display: inline-block;
+    max-width: 275px;
   }
+}
+@media only screen and (min-width: 1280px) {
+  .textRight {
+    margin-top: 24px;
+    display: inline-block;
+    max-width: 400px;
+    text-indent: 98px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
 
-
-  @media only screen and (max-width: 767px) {
-    .textRight  br {
+@media only screen and (max-width: 767px) {
+  .textRight br {
     display: none;
   }
-    
 }
-  .textBoxLeft {
-    /* max-width: 417px; */
-    text-align: center;
-    margin-top: 36px;
-    /* margin-bottom: 40px; */
+.textBoxLeft {
+  /* max-width: 417px; */
+  text-align: center;
+  margin-top: 36px;
+  /* margin-bottom: 40px; */
 }
 @media only screen and (min-width: 768px) {
   .textBoxLeft {
- max-width: 269px;
+    max-width: 269px;
     text-align: center;
     margin-top: 56px;
     /* margin-bottom: 40px; */
-}
+  }
 }
 @media only screen and (min-width: 1280px) {
   .textBoxLeft {
-  max-width: 417px;
-  text-align: center;
-  margin-top: 68px;
-  /* margin-bottom: 0px; */
+    max-width: 417px;
+    text-align: center;
+    margin-top: 68px;
+    /* margin-bottom: 0px; */
+  }
 }
-  }
-  .textLeft {
-    margin-top: 16px;
-    margin-bottom: 40px;
-    font-size: 12px;
-    line-height: 14px;
-  }
-    /*  */
+.textLeft {
+  margin-top: 16px;
+  margin-bottom: 40px;
+  font-size: 12px;
+  line-height: 14px;
+}
+/*  */
 @media only screen and (min-width: 768px) {
   .textLeft {
-  margin-top: 24px;
-  margin-bottom: 0px;
-  font-size: 16px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+    font-size: 16px;
     line-height: 19px;
-}
+  }
 }
 @media only screen and (min-width: 1280px) {
   .textLeft {
-  margin-top: 36px;
-  font-size: 24px;
-  line-height: 29px;
+    margin-top: 36px;
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
-  }
-  .textLeftImg {
-    width: 24px;
-    height: 24px;
-  }
-
+.textLeftImg {
+  width: 24px;
+  height: 24px;
+}
 
 @media only screen and (min-width: 1280px) {
   .textLeftImg {
-  width: 36px;
-  height: 36px;
+    width: 36px;
+    height: 36px;
+  }
 }
-  }
 
-  .boxImg {    
-    /* position: absolute; */
-    width: 216px;
-    height: 292px;
-  }
+.boxImg {
+  width: 216px;
+  height: 292px;
+}
 @media only screen and (min-width: 768px) {
-  .boxImg { 
-  position: absolute;
-  width: 313px;  
-  right: 0px;
-  bottom: 126px;
-}
-}
-@media only screen and (min-width: 1280px) {
-  .boxImg { 
-
-  width: 492px;
-  height: 662px;
-  
-  bottom: 0px;
-}
-  }
-  .heroImg {
-    width: 100%;
-    /* min-height: 422px; */
-  }
-
-  /* Banner */
-  .bannerBackground {
-    position: relative;
-    background-color: #DC3B5A;
-    width: 957px;
-    height: 54px;
-    margin-left: -384px;
-  }
-    /*  */
-@media only screen and (min-width: 768px) {
-  .bannerBackground {
-
-  width: 952px;
-  height: 52px;
-  margin-left: -231px;
-}
-}
-@media only screen and (min-width: 1280px) {
-  .bannerBackground {
- 
-  width: 1582px;
-  height: 86px;
-  margin-left: -231px;
-}
-  }
-
-  .banner {
+  .boxImg {
     position: absolute;
-    background: #984d5c;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-    width: 957px;
-    box-sizing: border-box;
-    padding: 4px 0 14px 0;
-
-    white-space: nowrap; 
-  overflow: hidden; 
-
-    animation: marquee 7s linear infinite; 
+    width: 313px;
+    right: 0px;
+    bottom: 126px;
   }
+}
+@media only screen and (min-width: 1280px) {
+  .boxImg {
+    width: 492px;
+    height: 662px;
+
+    bottom: 0px;
+  }
+}
+.heroImg {
+  width: 100%;
+}
+
+/* Banner */
+.bannerBackground {
+  position: relative;
+  background-color: #dc3b5a;
+  width: 957px;
+  height: 54px;
+  margin-left: -384px;
+}
+/*  */
 @media only screen and (min-width: 768px) {
-  .banner { 
+  .bannerBackground {
+    width: 952px;
+    height: 52px;
+    margin-left: -231px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .bannerBackground {
+    width: 1582px;
+    height: 86px;
+    margin-left: -231px;
+  }
+}
+
+.banner {
+  position: absolute;
+  background: #984d5c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 957px;
+  box-sizing: border-box;
+  padding: 4px 0 14px 0;
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  animation: marquee 7s linear infinite;
+}
+@media only screen and (min-width: 768px) {
+  .banner {
     height: 50px;
     width: 952px;
     padding: 6px 0 8px 0;
-
-}
+  }
 }
 @media only screen and (min-width: 1280px) {
   .banner {
-  
     gap: 36px;
     width: 1582px;
     box-sizing: border-box;
     padding: 6px 0 16px 0;
-/* margin: auto 0; */
-    white-space: nowrap; 
-  overflow: hidden; 
-height: 86px;
-    
+    /* margin: auto 0; */
+    white-space: nowrap;
+    overflow: hidden;
+    height: 86px;
+  }
 }
-  }
 
-  @keyframes marquee {
-    0% { transform: translateX(100%); } 
-    100% { transform: translateX(-100%); } 
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
   }
-  .textBanner {
-    font-family: "Right Grotesk", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 36px;
-    line-height: 36px;
+  100% {
+    transform: translateX(-100%);
   }
-
+}
+.textBanner {
+  font-family: "Right Grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+}
 
 @media only screen and (min-width: 1280px) {
   .textBanner {
-  
-  font-size: 64px;
-  line-height: 64px;
+    font-size: 64px;
+    line-height: 64px;
+  }
 }
-  }
-  .textImg {
-    width: 36px;
-    height: 36px;
-    margin-top: 5px;
-  }
+.textImg {
+  width: 36px;
+  height: 36px;
+  margin-top: 5px;
+}

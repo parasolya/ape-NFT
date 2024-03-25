@@ -4,13 +4,15 @@
   background: grey;
   padding: 54px 16px 0 16px;
   color: #1e1e1e;
-  
+}
   @media only screen and (min-width: 768px) {
+    .section {
     padding: 34px 16px 40px 16px;
     /* max-width: 768px */
   }
-
+}
   @media only screen and (min-width: 1280px) {
+    .section {
     position: relative;
     padding: 16px 16px 0 16px;
     /* position: relative; */
@@ -24,13 +26,15 @@
   flex-direction: column;
   box-sizing: border-box;
   padding: 36px 64px 20px 64px;
-
+}
   @media only screen and (min-width: 768px) {
+    .wrapper {
     padding: 0 72px 0 72px;
     height: 421px;
   }
-
+  }
   @media only screen and (min-width: 1280px) {
+    .wrapper {
     padding: 197px 188px 110px 188px;
     height: 677px;
   }
@@ -52,14 +56,16 @@
   display: flex;
   justify-content: space-between;
   width: 209px;
-
+}
   @media only screen and (min-width: 768px) {
+    .title {
     font-size: 92px;
     line-height: 92px;
     width: 591px;
   }
-
+  }
   @media only screen and (min-width: 1280px) {
+    .title {
     font-weight: 900;
     width: 1019px;
     font-size: 164px;
@@ -74,13 +80,15 @@
   font-size: 16px;
   line-height: 27px;
   text-transform: none;
-
+}
   @media only screen and (min-width: 768px) {
+    .textDecorated {
     font-size: 20px;
     line-height: 33px;
   }
-
+  }
   @media only screen and (min-width: 1280px) {
+    .textDecorated {
     font-size: 24px;
     line-height: 40px;
   }
@@ -88,16 +96,18 @@
 .textInfo {
   font-size: 12px;
   line-height: 14px;
-
+}
   @media only screen and (min-width: 768px) {
+    .textInfo {
     height: 56px;
     text-align: justify;
     text-indent: 48px;
     font-size: 12px;
     line-height: 14px;
   }
-
+  }
   @media only screen and (min-width: 1280px) {
+    .textInfo {
     height: 57px;
     text-align: justify;
     text-indent: 50px;
@@ -125,14 +135,16 @@
   width: 216px;
   box-sizing: border-box;
   padding-top: 49px;
-
+}
   @media only screen and (min-width: 768px) {
+    .infoBox {
     width: 190px;
     box-sizing: border-box;
     padding-top: 8px;
   }
-
+}
   @media only screen and (min-width: 1280px) {
+    .infoBox {
     width: 337px;
     box-sizing: border-box;
     padding-top: 8px;
@@ -161,9 +173,8 @@
   font-size: 16px;
   line-height: 19px;
 }
-  @media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   .heroBtn {
-  
     position: static;
     box-sizing: border-box;
     margin-top: 16px;
@@ -180,8 +191,8 @@
     font-weight: 900;
   }
 }
-  @media only screen and (min-width: 1280px) {
-    .heroBtn {
+@media only screen and (min-width: 1280px) {
+  .heroBtn {
     position: static;
     box-sizing: border-box;
     margin-top: 28px;
@@ -226,5 +237,4 @@
 }
 .heroImg {
   width: 100%;
-  /* min-height: 386px; */
 }

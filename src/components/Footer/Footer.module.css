@@ -1,13 +1,9 @@
-
 .section {
-    box-sizing: border-box;
-    /* z-index: 15; */
-    width: 100%;
-    padding: 24px 72px;
-    text-align: center;
-
-   
- 
+  box-sizing: border-box;
+  /* z-index: 15; */
+  width: 100%;
+  padding: 24px 72px;
+  text-align: center;
 
   @media only screen and (min-width: 768px) {
     box-sizing: border-box;
@@ -17,12 +13,10 @@
     padding: 40px 0px;
     text-align: center;
 
-   
-  font-size: 16px;
-  line-height: 19px;
+    font-size: 16px;
+    line-height: 19px;
   }
-  
-  
+
   @media only screen and (min-width: 1280px) {
     box-sizing: border-box;
     /* z-index: 15; */
@@ -31,20 +25,18 @@
     padding: 40px 0px;
     text-align: center;
 
-   
-  font-size: 16px;
-  line-height: 19px;
+    font-size: 16px;
+    line-height: 19px;
   }
-  }
+}
 
-  .text {
-    font-size: 12px;
+.text {
+  font-size: 12px;
   line-height: 14px;
+}
+@media only screen and (min-width: 1280px) {
+  .text {
+    font-size: 16px;
+    line-height: 19px;
   }
-  @media only screen and (min-width: 1280px) {
-    .text {
-   
-  font-size: 16px;
-  line-height: 19px;
-  }
-  }
+}

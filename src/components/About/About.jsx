@@ -7,7 +7,6 @@ const About = ({ setSelectedPage }) => {
   return (
     <section id="about" className={css.section}>
            <motion.div className={css.context}
-        // className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
         onViewportEnter={() => setSelectedPage("about")}
       >
         <div className={css.context}>

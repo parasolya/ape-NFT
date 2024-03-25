@@ -12,10 +12,7 @@ const Hero = ({ setSelectedPage }) => {
 
   return (
     <section id="hero" className={css.section}>
-      <motion.div
-        // className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
-        onViewportEnter={() => setSelectedPage("hero")}
-      >
+      <motion.div onViewportEnter={() => setSelectedPage("hero")}>
         <div className={css.wrapper}>
           <div className={css.context}>
             <p className={css.textDecorated}>diD yOu seE iT ?</p>
@@ -23,7 +20,6 @@ const Hero = ({ setSelectedPage }) => {
               <span>YACHT</span>
               <span>APES</span>
             </h1>
-            {/* <h1 className={css.title}>YACHT TTTT<span>APES</span></h1> */}
             <div className={css.textBox}>
               <p className={css.textDecorated}>Apes aRe eveRywhere</p>
               <div className={css.boxImg}>

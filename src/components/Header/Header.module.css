@@ -1,43 +1,43 @@
 .section {
   position: relative;
   width: 100%;
-  /* background: greenyellow; */
   box-sizing: border-box;
   color: #1e1e1e;
-
+}
   @media only screen and (min-width: 768px) {
+    .section {
     padding: 0px 32px 0 32px;
     position: fixed;
-    
-  top: 72px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+    top: 72px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 300;
   }
-
+  }
   @media only screen and (min-width: 1280px) {
     padding: 0px 112px 0 112px;
-  top: 76px;
-  max-width: 1440px;
+    .section {
+    top: 76px;
+    max-width: 1440px;
   }
 }
-.wrapper { 
+.wrapper {
   display: flex;
-  /* flex-direction: column; */
   box-sizing: border-box;
 }
 @media only screen and (max-width: 767px) {
   .wrapper {
     display: none;
-}
+  }
 }
 @media only screen and (min-width: 768px) {
-  .wrapper {  
-    justify-content: space-between;  
+  .wrapper {
+    justify-content: space-between;
   }
 }
 .burgerMenuBox {
-position: relative;
+  position: relative;
 }
 .burgerMenu {
   margin-left: auto;
@@ -54,11 +54,10 @@ position: relative;
     padding-top: 15px;
     width: 72px;
     height: 50px;
-  
-}
+  }
 }
 .logoHeder path {
-  fill: #1E1E1E;
+  fill: #1e1e1e;
 }
 .logoHeder:hover path {
   fill: white !important;
@@ -75,49 +74,41 @@ position: relative;
 /* MOBILE MENU MODAL */
 
 .mobileWrapper {
-    position: fixed;
+  position: fixed;
 
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-z-index: 300;
-    width: 100vw;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 300;
+  width: 100vw;
   min-height: 100vh;
- 
 
-    background: yellow;
-    text-align: center;
-    /* justify-content: flex-end; */
-    /* min-height: 523px; */
-  }
+  background: yellow;
+  text-align: center;
+}
 
-  @media only screen and (min-width: 768px) {
-    .mobileWrapper {
-      display: none;
-    }
+@media only screen and (min-width: 768px) {
+  .mobileWrapper {
+    display: none;
   }
-  
-  .mobileBox {
-   
-    pointer-events: none;
-    
-    box-sizing: border-box;
-    padding: 70px 16px 0px 16px;
-    margin: 0 auto;
-    /* max-width: 360px;  */
-  }
-.topPart {   
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    min-width: 328px;   
-    height: 28px;  
-    /* background: #ab5454; */
-    /* align-items: center; */
-  }
+}
 
- .footer { 
- 
+.mobileBox {
+  pointer-events: none;
+
+  box-sizing: border-box;
+  padding: 70px 16px 0px 16px;
+  margin: 0 auto;
+}
+.topPart {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  min-width: 328px;
+  height: 28px;
+}
+
+.footer {
   margin: 77px auto 24px auto;
   width: 216px;
 }
@@ -129,30 +120,20 @@ z-index: 300;
   margin: auto;
   max-width: 121px;
   height: 264px;
-  /* margin-bottom: 218px; */
-  /* height: 264px; */
-margin-bottom: 0;
+  margin-bottom: 0;
   padding-top: 62px;
   height: 264px;
 }
 
-
 .mainPart {
-    /* min-height: 523px; */
-    background: #9f7171;
-    max-height: 493px;
-    width: 100%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
-   
-    /* gap: 218px; */
-   align-items: center;
-    /* margin-top: auto;  */
-    margin-bottom: 0;
-   min-height: 100vh;
-text-align: center;
-
+  /* min-height: 523px; */
+  background: #9f7171;
+  max-height: 493px;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 0;
+  min-height: 100vh;
+  text-align: center;
 }
 
 .logoIcon {
@@ -177,7 +158,7 @@ text-align: center;
   border-width: 0;
   border-radius: 8px;
   margin-bottom: 10px;
-  transition: color 0.3s, text-decoration 0.3s; /* Плавний перехід стилів */
+  transition: color 0.3s, text-decoration 0.3s; 
 
   font-family: Messina Sans Mono, sans-serif;
   font-weight: 600;

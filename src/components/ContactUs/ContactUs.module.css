@@ -2,19 +2,17 @@
   box-sizing: border-box;
   width: 100%;
   /* background: rgb(129, 186, 37); */
-  padding: 60px 72px 36px 72px; 
+  padding: 60px 72px 36px 72px;
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
-  .section {     
-  padding: 40px 88px 40px 88px;
+  .section {
+    padding: 40px 88px 40px 88px;
+  }
 }
-}
-
 
 @media only screen and (min-width: 1280px) {
- 
-} 
+}
 
 .title {
   font-family: "Right Grotesk", sans-serif;
@@ -26,15 +24,14 @@
 }
 @media only screen and (min-width: 768px) {
   .title {
-  font-size: 80px;
-  line-height: 80px;  
-  margin-bottom: 40px;
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 40px;
+  }
 }
-}
-  
-  
-  @media only screen and (min-width: 1280px) {
-    .title {
+
+@media only screen and (min-width: 1280px) {
+  .title {
     font-family: "Right Grotesk", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -48,13 +45,13 @@
   width: 216px;
   margin: 0 auto;
 }
-  @media only screen and (min-width: 768px) {
-    .wrapper {
+@media only screen and (min-width: 768px) {
+  .wrapper {
     width: 397px;
   }
-}   
-  @media only screen and (min-width: 1280px) {
-    .wrapper {
+}
+@media only screen and (min-width: 1280px) {
+  .wrapper {
     width: 581px;
   }
 }
@@ -64,16 +61,16 @@
   width: 216px;
   margin: 0 auto;
 
-  @media only screen and (min-width: 768px) {  
+  @media only screen and (min-width: 768px) {
     margin-top: 60px;
     width: 397px;
-  } 
-  
+  }
+
   @media only screen and (min-width: 1280px) {
     text-align: center;
-  margin-top: 56px;
-  width: 581px;
-  margin: 0 auto;
+    margin-top: 56px;
+    width: 581px;
+    margin: 0 auto;
   }
 }
 .textLeft {
@@ -83,17 +80,17 @@
   line-height: 19px;
   height: 95px;
 }
-  @media only screen and (min-width: 768px) {
-    .textLeft {
+@media only screen and (min-width: 768px) {
+  .textLeft {
     margin-top: 24px;
     margin-bottom: 24px;
-    
+
     height: 57px;
   }
-}  
-  @media only screen and (min-width: 1280px) {
-    .textLeft {
-    margin-top: 36px;  
+}
+@media only screen and (min-width: 1280px) {
+  .textLeft {
+    margin-top: 36px;
     margin-bottom: 40px;
     font-size: 24px;
     line-height: 29px;
@@ -106,12 +103,9 @@
   height: 36px;
 
   @media only screen and (min-width: 768px) {
-  
   }
-  
-  
+
   @media only screen and (min-width: 1280px) {
-   
   }
 }
 .input {
@@ -133,16 +127,16 @@
   padding-inline: 0;
   background: transparent;
 }
-  @media only screen and (min-width: 768px) {   
-    .input {
-  min-width: 200px;
-  height: 48px;
-  padding: 22px 24px 22px 24px !important;
+@media only screen and (min-width: 768px) {
+  .input {
+    min-width: 200px;
+    height: 48px;
+    padding: 22px 24px 22px 24px !important;
   }
-} 
-  
-  @media only screen and (min-width: 1280px) {
-    .input {
+}
+
+@media only screen and (min-width: 1280px) {
+  .input {
     font-family: Messina Sans Mono, sans-serif;
     color: white;
     font-weight: 400;
@@ -150,7 +144,7 @@
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
-  
+
     box-sizing: border-box;
     min-width: 333px;
     height: 64px;
@@ -180,7 +174,6 @@
 .input:-webkit-autofill:active {
   -webkit-text-fill-color: white !important;
   -webkit-box-shadow: 0 0 0 397px #171717 inset;
-
 }
 
 .input::placeholder {
@@ -192,7 +185,6 @@
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
-
 }
 .text {
   position: absolute;
@@ -204,13 +196,12 @@
   line-height: 12px;
   color: #dc3b5a;
 }
- 
-  
-  @media only screen and (min-width: 1280px) {
-    .text {
-  bottom: -16px;
-  font-size: 12px;
-  line-height: 14px;
+
+@media only screen and (min-width: 1280px) {
+  .text {
+    bottom: -16px;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 
@@ -231,27 +222,26 @@
   color: white;
   cursor: pointer;
 }
-  @media only screen and (min-width: 768px) {
-    .btnSubmit {
+@media only screen and (min-width: 768px) {
+  .btnSubmit {
     width: 247px;
-    height: 41px; 
+    height: 41px;
   }
 }
-  
-  @media only screen and (min-width: 1280px) {
-    .btnSubmit {
+
+@media only screen and (min-width: 1280px) {
+  .btnSubmit {
     width: 397px;
-  height: 70px;
-  border-radius: 12px;
-  box-sizing: border-box;
-  padding: 16px 140px 20px 140px;
-  
-  font-size: 28px;
-  line-height: 34px;
-  color: white;
-  cursor: pointer;
+    height: 70px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 16px 140px 20px 140px;
+
+    font-size: 28px;
+    line-height: 34px;
+    color: white;
+    cursor: pointer;
   }
-  
 }
 /* .navBtn span {
   pointer-events: none; 
@@ -268,12 +258,10 @@
 
   @media only screen and (min-width: 768px) {
     width: 248px;
-  
-  }  
-  
+  }
+
   @media only screen and (min-width: 1280px) {
     width: 397px;
-  
   }
 }
 
@@ -284,17 +272,17 @@
   width: 216px;
   height: 48px;
 }
-  @media only screen and (min-width: 768px) {
-    .inputWrapper {
+@media only screen and (min-width: 768px) {
+  .inputWrapper {
     position: relative;
-  display: flex;
-  margin-bottom: 24px;
-  width: 248px;
+    display: flex;
+    margin-bottom: 24px;
+    width: 248px;
   }
-} 
-  
-  @media only screen and (min-width: 1280px) {
-    .inputWrapper {
+}
+
+@media only screen and (min-width: 1280px) {
+  .inputWrapper {
     position: relative;
     display: flex;
     margin-bottom: 24px;
@@ -315,8 +303,6 @@
   border: 1px solid #1e1e1e;
   border-right: none;
 
-
-  
   @media only screen and (min-width: 1280px) {
     display: flex;
     justify-content: center;
@@ -324,12 +310,11 @@
     min-width: 64px;
     height: 64px;
     background: #1e1e1e;
-  
+
     border-radius: 12px 0 0 12px;
     box-sizing: border-box;
     border: 1px solid #1e1e1e;
     border-right: none;
-  
   }
 }
 .iconDiscord {
@@ -342,12 +327,11 @@
     height: 16px;
     color: #5a65f2;
   }
-  
-  
+
   @media only screen and (min-width: 1280px) {
     width: 20px;
-  height: 16px;
-  color: #5a65f2;
+    height: 16px;
+    color: #5a65f2;
   }
 }
 
@@ -359,18 +343,16 @@
     width: 18px;
     height: 16px;
   }
-  
-  
+
   @media only screen and (min-width: 1280px) {
     width: 18px;
-  height: 16px;
+    height: 16px;
   }
 }
 
 /* popUp */
 
 .popUp {
-  
   position: fixed;
   top: 50%;
   left: 50%;
@@ -389,15 +371,15 @@
   font-weight: 900;
   font-style: normal;
   font-size: 28px;
-  /* line-height: px; */
-
-  @media only screen and (min-width: 768px) {
-  
+}
+@media only screen and (min-width: 768px) {
+  .popUpBtn {
   }
-  
-  
-  @media only screen and (min-width: 1280px) {
-   
+}
+
+@media only screen and (min-width: 1280px) {
+  .popUpBtn {
+    font-size: 28px;
   }
 }
 .popUpBtn:hover,
@@ -410,12 +392,26 @@
   grid-template-rows: auto auto;
   background: #1e1e1e;
   box-sizing: border-box;
-  padding: 24px;
-  height: 480px;
-  width: 504px;
-  border-radius: 24px;
-
-  @media only screen and (min-width: 768px) {
+  padding: 8px;
+  height: 400px;
+  width: 224px;
+  border-radius: 8px;
+}
+@media only screen and (min-width: 768px) {
+  .containerItem {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    background: #1e1e1e;
+    box-sizing: border-box;
+    padding: 16px;
+    height: 480px;
+    width: 504px;
+    border-radius: 16px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .containerItem {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -425,22 +421,7 @@
     height: 480px;
     width: 504px;
     border-radius: 24px;
-  
   }
-  
-  
-  @media only screen and (min-width: 1280px) {
-    display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  background: #1e1e1e;
-  box-sizing: border-box;
-  padding: 24px;
-  height: 480px;
-  width: 504px;
-  border-radius: 24px;
-
-  } 
 }
 .addColor {
   background: #dc3b5a;
@@ -452,12 +433,17 @@
   font-family: "Right Grotesk", sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 64px;
-  line-height: 64px;
+  font-size: 32px;
+  line-height: 32px;
   text-align: left;
-  
 }
-
+@media only screen and (min-width: 1280px) {
+  .upperElement {
+    font-size: 64px;
+    line-height: 64px;
+    text-align: left;
+  }
+}
 .spinner {
   width: 50px;
   height: 50px;

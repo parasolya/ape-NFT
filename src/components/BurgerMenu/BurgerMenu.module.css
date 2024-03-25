@@ -1,20 +1,20 @@
 .wrapper {
-    display: flex;
+  display: flex;
 }
 .linkList {
   display: flex;
 }
 .navBtn {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
-  color: #1E1E1E;
+  color: #1e1e1e;
   text-transform: uppercase;
   background: rgba(30, 30, 30, 0.1);
   border: none;
-  transition: color 0.3s, text-decoration 0.3s; /* Плавний перехід стилів */
+  transition: color 0.3s, text-decoration 0.3s; 
 
   font-family: Messina Sans Mono, sans-serif;
   font-weight: 600;
@@ -28,7 +28,7 @@
     width: 80px;
     height: 80px;
     font-size: 16px;
-  line-height: 19px;
+    line-height: 19px;
   }
 }
 
@@ -42,6 +42,6 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-.isTopPage.isTopPage:hover  {
-  color: #dc3b5a !important;  
+.isTopPage.isTopPage:hover {
+  color: #dc3b5a !important;
 }

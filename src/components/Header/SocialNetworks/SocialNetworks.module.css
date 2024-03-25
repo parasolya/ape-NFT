@@ -26,12 +26,10 @@
   height: 48px;
   background: rgba(30, 30, 30, 0.1);
   border-radius: 8px;
-
-  @media only screen and (min-width: 768px) {
-  }
-
-  /* Десктопи (1280px) */
+} 
+  
   @media only screen and (min-width: 1280px) {
+    .linkWrapper {
     width: 80px;
     height: 80px;
     border-radius: 12px;

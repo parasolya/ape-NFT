@@ -48,11 +48,10 @@ const FAQ = ({ setSelectedPage }) => {
   return (
     <section id="faq" className={css.section}>
            <motion.div
-        // className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
         onViewportEnter={() => setSelectedPage("faq")}
       >
       <h1 className={css.title}>FAQ</h1>
-      <div className={css.apeArreyWrapper}>
+      <div className={css.apeArrayWrapper}>
         {apeArray.map((item, index) => (
           <FAQItem
             key={item.number}
