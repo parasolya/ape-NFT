@@ -1,31 +1,21 @@
-/* @media only screen and (min-width: 360px) and (max-width: 480px) {
-    
-}
-
-
-
-@media only screen and (min-width: 768px) {
-  
-}
-
-
-@media only screen and (min-width: 1280px) {
- 
-} */
-
 .section {
   position: relative;
   width: 100%;
   /* background: greenyellow; */
   box-sizing: border-box;
-  /* padding: 8px 8px; */
   color: #1e1e1e;
 
   @media only screen and (min-width: 768px) {
+    padding: 0px 32px 0 32px;
+    position: fixed;
+    max-width: 768px;
+  top: 72px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    z-index: 300;
   }
 
   @media only screen and (min-width: 1280px) {
-    /* background: yellow; */
     padding: 0px 88px 0 88px;
     position: fixed;
     max-width: 1440px;
@@ -36,23 +26,44 @@
 
   }
 }
-.wrapper {
+.wrapper { 
   display: flex;
   /* flex-direction: column; */
   box-sizing: border-box;
-  padding: 0px 24px 0px 24px;
+  /* padding: 0px 24px 0px 24px; */
   border-bottom: none;
   /* background: #634e52; */
 }
+@media only screen and (max-width: 767px) {
+  .wrapper {
+  display: none;
+}
+}
+@media only screen and (min-width: 1280px) {
+  .wrapper {  
+  padding: 0px 24px 0px 24px;
+  border-bottom: none;
+}
+}
+
 .burgerMenu {
   margin-left: auto;
 }
 
 .logoIconHeder {
-  margin-top: auto;
-  margin-bottom: 0;
-  width: 72px;
-  height: 50px;
+  margin-bottom: auto;
+  padding-top: 8px;
+  width: 48px;
+  height: 32px;
+}
+@media only screen and (min-width: 1280px) {
+  .logoIconHeder {
+      margin-top: auto;
+    margin-bottom: 0;
+    width: 72px;
+    height: 50px;
+  
+}
 }
 .logoHeder path {
   fill: #1E1E1E;
@@ -73,42 +84,49 @@
 
 .mobileWrapper {
     position: fixed;
+
     top: 0;
-    left: 0;
-    right: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+z-index: 300;
     width: 100vw;
-    max-height: 100vh;
-    z-index: 30;
+  min-height: 100vh;
+ 
+
     background: yellow;
     text-align: center;
-    justify-content: flex-end;
-    min-height: 523px;
+    /* justify-content: flex-end; */
+    /* min-height: 523px; */
+  }
+
+  @media only screen and (min-width: 768px) {
+    .mobileWrapper {
+      display: none;
+    }
   }
   
   .mobileBox {
-    position: absolute;
-    top: 0px;
-    left: 50%; /* Змініть це на 50% ширини контейнера */
-    transform: translateX(-50%); /* Використайте це для центрування по горизонталі */
+   
+    pointer-events: none;
+    
     box-sizing: border-box;
-    padding: 62px 16px 0px 0px;
+    padding: 70px 16px 0px 16px;
     margin: 0 auto;
-    max-width: 360px; /* Додайте знову max-width, якщо це необхідно */
+    /* max-width: 360px;  */
   }
 .topPart {   
+    position: absolute;
     display: flex;
     justify-content: space-between;
-    max-width: 360px;     
-    box-sizing: border-box;
-    padding:   0px 16px;
-    background: #ab5454;
+    min-width: 328px;   
+    height: 28px;  
+    /* background: #ab5454; */
+    /* align-items: center; */
   }
 
- .footer {
-  /* margin-top: 77px;
-   */
-   margin-top: auto;
-  margin-bottom: 24px;
+ .footer { 
+ 
+  margin: 77px auto 24px auto;
   width: 216px;
 }
 .linkWrapper {
@@ -116,36 +134,46 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin: 0 auto;
+  margin: auto;
   max-width: 121px;
   height: 264px;
   /* margin-bottom: 218px; */
   /* height: 264px; */
-  margin-top: auto;
+margin-bottom: 0;
   padding-top: 62px;
+  height: 264px;
 }
+
 
 .mainPart {
-    min-height: 523px;
-    max-height: 100%;
-    /* min-width: 360px; */
+    /* min-height: 523px; */
+    background: #9f7171;
+    max-height: 493px;
     width: 100%;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
+   
     /* gap: 218px; */
    align-items: center;
-    margin-top: auto; 
+    /* margin-top: auto;  */
     margin-bottom: 0;
-    height: 100vh;
+   min-height: 100vh;
+text-align: center;
 
 }
 
-.logoIcon:hover path {
+.logoIcon {
+  margin-top: 8px;
+  pointer-events: auto;
+}
+
+.logoIcon.isTopPage:hover path {
   fill: #dc3b5a;
 }
 
 .navBtn {
+  pointer-events: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,7 +184,7 @@
   background: rgba(30, 30, 30, 0.1);
   border-width: 0;
   border-radius: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   transition: color 0.3s, text-decoration 0.3s; /* Плавний перехід стилів */
 
   font-family: Messina Sans Mono, sans-serif;

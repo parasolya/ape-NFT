@@ -8,8 +8,8 @@
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  width: 80px;
-  height: 80px;
+  width: 48px;
+  height: 48px;
   color: #1E1E1E;
   text-transform: uppercase;
   background: rgba(30, 30, 30, 0.1);
@@ -19,8 +19,17 @@
   font-family: Messina Sans Mono, sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 16px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .navBtn {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
   line-height: 19px;
+  }
 }
 
 .navBtn:hover {
@@ -34,6 +43,5 @@
 }
 
 .isTopPage.isTopPage:hover  {
-  color: #dc3b5a !important;
-  
+  color: #dc3b5a !important;  
 }

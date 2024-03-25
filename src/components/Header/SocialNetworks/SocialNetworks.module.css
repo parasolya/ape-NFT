@@ -1,24 +1,27 @@
 
 .headerLinks {   
-   
-    /* margin-left: auto; */
     display: flex;
     flex-direction: column;
     gap: 16px;
-
+}
     @media only screen and (min-width: 768px) {
-       
+        .headerLinks { 
+            position: absolute;
+            z-index: 40;
+            top: 54px;
+            right: 32px;
+         }
     }
-    
-    /* Десктопи (1280px) */
+
     @media only screen and (min-width: 1280px) {
-        position: absolute;
-        z-index: 40;
+        .headerLinks {  
+       
         top: 100px;
         right: 112px;
     }
 }
 .linkWrapper {
+    pointer-events: auto;
     display: flex; 
     justify-content: center; 
     align-items: center; 

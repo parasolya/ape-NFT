@@ -200,6 +200,7 @@
   color: white;
 }
 .boxImg {
+  position: static;
   width: 216px;
   height: 284px;
 
@@ -223,5 +224,5 @@
 }
 .heroImg {
   width: 100%;
-  min-height: 386px;
+  /* min-height: 386px; */
 }

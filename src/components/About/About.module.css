@@ -193,13 +193,14 @@
   }
 
   .boxImg {    
-    min-width: 216px;
-    max-height: 292px;
+    /* position: absolute; */
+    width: 216px;
+    height: 292px;
   }
 @media only screen and (min-width: 768px) {
   .boxImg { 
   position: absolute;
-  width: 313px;
+  width: 313px;  
   right: 0px;
   bottom: 126px;
 }
@@ -215,7 +216,7 @@
   }
   .heroImg {
     width: 100%;
-    min-height: 422px;
+    /* min-height: 422px; */
   }
 
   /* Banner */
