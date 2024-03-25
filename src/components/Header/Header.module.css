@@ -16,8 +16,8 @@
   }
   }
   @media only screen and (min-width: 1280px) {
-    padding: 0px 112px 0 112px;
     .section {
+      padding: 0px 112px 0 112px;
     top: 76px;
     max-width: 1440px;
   }
