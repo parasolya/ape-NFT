@@ -1,4 +1,4 @@
-# ape-NFT ![]
+# ape-NFT
 
 ___
 
