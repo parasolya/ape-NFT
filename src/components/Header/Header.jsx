@@ -12,11 +12,11 @@ const Header = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   
   const isScrolling = useScroll();
 
-  useEffect(() => {
-    if (!isScrolling) {
-      setIsCloseMenu(!isCloseMenu);
-    }
-  }, [isScrolling]);
+  // useEffect(() => {
+  //   if (!isScrolling) {
+  //     setIsCloseMenu(!isCloseMenu);
+  //   }
+  // }, [isScrolling]);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -126,8 +126,9 @@ const Header = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 />
               </svg>
             </a>
+          
           </div>
-
+<div className={css.burgerMenuBox}>
           <div className={css.burgerMenu}>
             <BurgerMenu
               isCloseMenu={isCloseMenu}
@@ -141,7 +142,7 @@ const Header = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
           <SocialNetworks isCloseMenu={isCloseMenu} isTopOfPage={isTopOfPage} />
         </div>
-      
+        </div>
 
       {/* MOBILE MENU MODAL */}
       {/*  */}

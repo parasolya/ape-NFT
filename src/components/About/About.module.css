@@ -43,6 +43,11 @@
       padding-bottom: 40px;
     }
   }
+  @media only screen and (min-width: 1280px) {
+    .content{
+padding-bottom: 40px;
+    }
+  }
   .title {
     font-family: "Right Grotesk", sans-serif;
     font-weight: 900;
@@ -153,7 +158,7 @@
   max-width: 417px;
   text-align: center;
   margin-top: 68px;
-  margin-bottom: 36px;
+  /* margin-bottom: 0px; */
 }
   }
   .textLeft {
@@ -174,7 +179,6 @@
 @media only screen and (min-width: 1280px) {
   .textLeft {
   margin-top: 36px;
-  margin-bottom: 40px;
   font-size: 24px;
   line-height: 29px;
 }
@@ -208,10 +212,10 @@
 @media only screen and (min-width: 1280px) {
   .boxImg { 
 
-  max-width: 492px;
-  max-height: 662px;
-  left: 762px;
-  bottom: 86px;
+  width: 492px;
+  height: 662px;
+  
+  bottom: 0px;
 }
   }
   .heroImg {
@@ -247,7 +251,7 @@
 
   .banner {
     position: absolute;
-    background: #DC3B5A;
+    background: #984d5c;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -265,27 +269,22 @@
   .banner { 
     height: 50px;
     width: 952px;
-    box-sizing: border-box;
     padding: 6px 0 8px 0;
 
 }
 }
 @media only screen and (min-width: 1280px) {
   .banner {
-  position: absolute;
-    background: #DC3B5A;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  
     gap: 36px;
     width: 1582px;
     box-sizing: border-box;
     padding: 6px 0 16px 0;
-
+/* margin: auto 0; */
     white-space: nowrap; 
   overflow: hidden; 
-
-    animation: marquee 7s linear infinite; 
+height: 86px;
+    
 }
   }
 

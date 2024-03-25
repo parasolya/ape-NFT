@@ -94,7 +94,7 @@
 }
 @media only screen and (min-width: 1280px) {  
   .container {
-  width: 1056px;  
+  width: 1054px;  
   scroll-padding: 0 264px;
 }
 }
@@ -169,5 +169,10 @@ border: none;
   display: flex;
   gap: 24px; 
   margin-left: -24px;
-  transition: transform 0.3s ease; /* Плавний перехід між слайдами */
+  transition: transform 0.3s ease; 
+}
+@media only screen and (min-width: 1280px) {
+  .slidesInner {
+    gap: 0; 
+  }
 }

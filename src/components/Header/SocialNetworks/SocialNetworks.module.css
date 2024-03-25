@@ -1,71 +1,64 @@
-
-.headerLinks {   
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.headerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
-    @media only screen and (min-width: 768px) {
-        .headerLinks { 
-            position: absolute;
-            z-index: 40;
-            top: 54px;
-            right: 32px;
-         }
-    }
+@media only screen and (min-width: 768px) {
+  .headerLinks {
+    position: absolute;
+    z-index: 40;
+    top: 54px;
+    right: 0px;
+  }
+}
 
-    @media only screen and (min-width: 1280px) {
-        .headerLinks {  
-       
-        top: 100px;
-        right: 112px;
-    }
+@media only screen and (min-width: 1280px) {
+  .headerLinks {
+    top: 100px;
+  }
 }
 .linkWrapper {
-    pointer-events: auto;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 48px;
-    height: 48px;
-    background: rgba(30, 30, 30, 0.1);
-    border-radius: 8px;
+  pointer-events: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(30, 30, 30, 0.1);
+  border-radius: 8px;
 
-    @media only screen and (min-width: 768px) {
-       
-    }
-    
-    /* Десктопи (1280px) */
-    @media only screen and (min-width: 1280px) {
-        width: 80px;
+  @media only screen and (min-width: 768px) {
+  }
+
+  /* Десктопи (1280px) */
+  @media only screen and (min-width: 1280px) {
+    width: 80px;
     height: 80px;
     border-radius: 12px;
-    }
+  }
 }
 
 .link {
-    text-decoration: none;
-    /* color: #1E1E1E; */
-    text-transform: uppercase;
-    padding: 20px;
+  text-decoration: none;
+  /* color: #1E1E1E; */
+  text-transform: uppercase;
+  padding: 20px;
 }
 
-
-
-  .linkImg:hover path,
-  .linkDiscord:hover path {
-    fill: white !important;
+.linkImg:hover path,
+.linkDiscord:hover path {
+  fill: white !important;
 }
 
 .linkImg.isTopPage path,
 .linkDiscord.isTopPage path {
-    fill: white;
+  fill: white;
 }
 
-
-  .linkImg.isTopPage:hover path,
-  .linkDiscord.isTopPage:hover path {
-    fill: #dc3b5a !important;
-  }
-  .isTop {
-    background: rgba(255, 255, 255, 0.1);
+.linkImg.isTopPage:hover path,
+.linkDiscord.isTopPage:hover path {
+  fill: #dc3b5a !important;
+}
+.isTop {
+  background: rgba(255, 255, 255, 0.1);
 }

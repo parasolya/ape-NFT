@@ -8,7 +8,7 @@
   @media only screen and (min-width: 768px) {
     padding: 0px 32px 0 32px;
     position: fixed;
-    max-width: 768px;
+    
   top: 72px;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -16,36 +16,29 @@
   }
 
   @media only screen and (min-width: 1280px) {
-    padding: 0px 88px 0 88px;
-    position: fixed;
-    max-width: 1440px;
+    padding: 0px 112px 0 112px;
   top: 76px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    z-index: 300;
-
+  max-width: 1440px;
   }
 }
 .wrapper { 
   display: flex;
   /* flex-direction: column; */
   box-sizing: border-box;
-  /* padding: 0px 24px 0px 24px; */
-  border-bottom: none;
-  /* background: #634e52; */
 }
 @media only screen and (max-width: 767px) {
   .wrapper {
-  display: none;
+    display: none;
 }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px) {
   .wrapper {  
-  padding: 0px 24px 0px 24px;
-  border-bottom: none;
+    justify-content: space-between;  
+  }
 }
+.burgerMenuBox {
+position: relative;
 }
-
 .burgerMenu {
   margin-left: auto;
 }
@@ -58,8 +51,7 @@
 }
 @media only screen and (min-width: 1280px) {
   .logoIconHeder {
-      margin-top: auto;
-    margin-bottom: 0;
+    padding-top: 15px;
     width: 72px;
     height: 50px;
   
