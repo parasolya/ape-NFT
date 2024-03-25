@@ -52,7 +52,7 @@ const FAQ = ({ setSelectedPage }) => {
         onViewportEnter={() => setSelectedPage("faq")}
       >
       <h1 className={css.title}>FAQ</h1>
-      <div className={css.apeArrayWrapper}>
+      <div className={css.apeArreyWrapper}>
         {apeArray.map((item, index) => (
           <FAQItem
             key={item.number}

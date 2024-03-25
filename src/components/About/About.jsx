@@ -6,10 +6,11 @@ import { motion } from "framer-motion";
 const About = ({ setSelectedPage }) => {
   return (
     <section id="about" className={css.section}>
-           <motion.div
+           <motion.div className={css.context}
         // className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
         onViewportEnter={() => setSelectedPage("about")}
       >
+        <div className={css.context}>
       <div className={css.textBox}>
         <h1 className={css.title}>
           a Story that started with <span>one simple <br/>ape</span>
@@ -33,6 +34,7 @@ const About = ({ setSelectedPage }) => {
         <div className={css.boxImg}>
           <img className={css.heroImg} src={heroAPE2} alt="hero Ape 2" />
         </div>
+      </div>
       </div>
       <div className={css.bannerBackground}>
         <div className={css.banner}>

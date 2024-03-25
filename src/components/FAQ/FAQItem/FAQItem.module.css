@@ -5,23 +5,22 @@
     justify-content: space-between;
     min-height: 40px;
     max-width: 216px;
-    /* min-width: 216px; */
     margin: 8px auto 0 auto;
     padding: 8px;
-   
-    /*  */
+}
+
 @media only screen and (min-width: 768px) {
-    position: relative;
-    display: flex;
-    border-radius: 24px;
-    justify-content: space-between;
-    min-height: 128px;
-    margin-bottom: 24px;
+    .faqItemWrapper {
+        border-radius: 16px;
+        min-height: 64px;
+        min-width: 592px;
+        margin: 0px auto 16px auto;
+        padding: 0px;
+}
 }
 
 @media only screen and (min-width: 1280px) {
-    position: relative;
-    display: flex;
+    .faqItemWrapper {
     border-radius: 24px;
     justify-content: space-between;
     min-height: 128px;
@@ -35,25 +34,23 @@
     border-radius: 12px;
     justify-content: space-between;
     max-width: 216px;
-    /* min-width: 216px; */
     min-height: 40px;
     padding: 8px;
     margin: 8px auto 0 auto;
-
-    /* height: 158px; */
-    /*  */
-@media only screen and (min-width: 768px) {
-    position: relative;
-    display: flex;
-    background: #1e1e1e;
-    border-radius: 24px;
-    justify-content: space-between;
-    min-height: 128px;
-    margin-bottom: 24px;
-    height: 250px;
 }
+@media only screen and (min-width: 768px) {
+    .faqItemWrapperOpen {
 
+    border-radius: 16px;
+        min-height: 64px;
+        /* min-width: 592px; */
+        max-width: 592px;
+        margin: 0px auto 16px auto;
+        padding: 18px;
+}
+}
 @media only screen and (min-width: 1280px) {
+    .faqItemWrapperOpen {
     position: relative;
     display: flex;
     
@@ -66,21 +63,23 @@
 }
 .faqImgBox {
     display: none;
-    /*  */
+}
 @media only screen and (min-width: 768px) {
+    .faqImgBox {
     display: block !important; 
     position: absolute;
-    left: 16px;
+    left: 20px;
     top: -15px;
-    width: 248px;
-    height: 282px;
+    width: 148px;
+    height: 183px;
     overflow: hidden;
-    transform: rotate(-8deg);
-    border-radius: 24px;
+    transform: rotate(-16deg);
+    border-radius: 16px;
     background: transparent;
 }
-
+}
 @media only screen and (min-width: 1280px) {
+    .faqImgBox {
     display: block !important; 
     position: absolute;
     left: 16px;
@@ -118,18 +117,15 @@
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   /*  */
-@media only screen and (min-width: 768px) {
-    max-width: 635px;
-    text-align: left;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
-
+@media only screen and (min-width: 768px) {
+    .questionBox {
+    max-width: 339px;
+    
+}
+}
 @media only screen and (min-width: 1280px) {
+    .questionBox {
     max-width: 635px;
     text-align: left;
     margin-top: 24px;
@@ -149,21 +145,23 @@
   font-size: 12px;
   line-height: 20px;
   text-transform: none;
-  /*  */
+}
 @media only screen and (min-width: 768px) {
+    .numberOpen {
     margin-left: auto;
-    margin-right: 51px;
-    margin-top: 36px;
+    margin-right: 18px;
+    margin-top: 24px;
     margin-bottom: auto;
-    font-family: 'Biro Script Plus';    
+ 
     font-weight: bold;
-    font-style: normal;
-  font-size: 24px;
-  line-height: 40px;
+   
+  font-size: 16px;
+  line-height: 27px;
   text-transform: none;
 }
-
+}
 @media only screen and (min-width: 1280px) {
+    .numberOpen {
     margin-left: auto;
     margin-right: 51px;
     margin-top: 36px;
@@ -181,33 +179,36 @@
     min-width: 23px;
     margin-top: 4px;
     margin-bottom: auto;
+    
     font-family: 'Biro Script Plus';    
     font-weight: 400;
     font-style: normal;
   font-size: 12px;
   line-height: 20px;
   text-transform: none;
-  @media only screen and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: 51px;
-    margin-top: 24px;
-    margin-bottom: auto;
-    font-family: 'Biro Script Plus';    
-    font-weight: bold;
-    font-style: normal;
-  font-size: 24px;
-  line-height: 40px;
-  text-transform: none;
 }
-
+  @media only screen and (min-width: 768px) {
+    .number { 
+    margin-left: auto;
+    margin-right: 18px;
+    margin-top: 24px;
+   
+      
+    font-weight: bold;
+   
+    font-size: 16px;
+    line-height: 27px;
+}
+  }
 @media only screen and (min-width: 1280px) {
+    .number { 
     margin-left: auto;
     margin-right: 51px;
     margin-top: 36px;
-    margin-bottom: auto;
-    font-family: 'Biro Script Plus';    
+   
+      
     font-weight: bold;
-    font-style: normal;
+    
   font-size: 24px;
   line-height: 40px;
   text-transform: none;
@@ -222,21 +223,19 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 10px;
-    /*  */
-@media only screen and (min-width: 768px) {
-    font-family: "Right Grotesk", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 64px;
-    line-height: 64px;
 }
-
+@media only screen and (min-width: 768px) {
+    .question {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 0px;
+}
+}
 @media only screen and (min-width: 1280px) {
-    font-family: "Right Grotesk", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+    .question {
     font-size: 64px;
     line-height: 64px;
+   
 }
 }
 .questionOpen {
@@ -247,19 +246,15 @@
     line-height: 20px;
     color: #DC3B5A;
     margin-bottom: 10px;
-    /*  */
-@media only screen and (min-width: 768px) {
-    font-family: "Right Grotesk", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 64px;
-    line-height: 64px;
 }
-
+@media only screen and (min-width: 768px) {
+    .questionOpen {
+    font-size: 32px;
+    line-height: 32px;
+}
+}
 @media only screen and (min-width: 1280px) {
-    font-family: "Right Grotesk", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+    .questionOpen {
     font-size: 64px;
     line-height: 64px;
 }
@@ -267,13 +262,7 @@
 
 .answer {
     font-size: 12px;
-/* max-height: 70px; */
+    line-height: 14px;
 white-space: normal;
-    @media only screen and (min-width: 768px) {
-
-    }
+}   
     
-    @media only screen and (min-width: 1280px) {
-    
-    }
-}

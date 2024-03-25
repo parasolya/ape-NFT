@@ -5,21 +5,16 @@
     padding: 60px 72px 0 72px; 
     text-align: center;
     overflow: hidden;
-    /*  */
-@media only screen and (min-width: 768px) {
-  box-sizing: border-box;
-  width: 100%;
-  background: rgb(36, 56, 4);
-  padding: 120px 204px;  
-  text-align: center;
 }
-
+@media only screen and (min-width: 768px) {
+  .section {     
+  padding: 40px 204px;  
+  /* max-width: 768px */
+}
+}
 @media only screen and (min-width: 1280px) {
-  box-sizing: border-box;
-  width: 100%;
-  background: rgb(36, 56, 4);
-  padding: 120px 204px;  
-  text-align: center;
+  .section {  
+  padding: 120px 204px; 
 }
   }
   .title {
@@ -29,20 +24,16 @@
     font-size: 40px;
     line-height: 40px; 
     margin-bottom: 24px;
-    /*  */
+      }
 @media only screen and (min-width: 768px) {
-  font-family: "Right Grotesk", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 160px;
-  line-height: 160px;  
-  margin-bottom: 80px;
+  .title {
+  font-size: 80px;
+  line-height: 80px;  
+  margin-bottom: 60px;
 }
-
+}
 @media only screen and (min-width: 1280px) {
-  font-family: "Right Grotesk", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  .title {
   font-size: 160px;
   line-height: 160px;  
   margin-bottom: 80px;
@@ -52,21 +43,16 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Чотири стовпці рівні по ширині */
     gap: 0px 72px;
-  /*  */
+   }
 @media only screen and (min-width: 768px) {
-  display: grid;
+  .gridContainer {
   grid-template-columns: repeat(2, 1fr); /* Два стовпці рівні по ширині */
   gap: 24px;
+  margin: 0 auto;
+  justify-content: center;
 }
-
-@media only screen and (min-width: 1280px) {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Два стовпці рівні по ширині */
-  gap: 24px;
 }
-  
-  }
-  
+ 
   .containerItem {
     display: grid;
     grid-template-columns: 1fr; /* Одна колонка */
@@ -77,27 +63,20 @@
     height: 242px;
   width: 216px;
     border-radius: 12px;
-    
+  }    
     /*  */
 @media only screen and (min-width: 768px) {
-  display: grid;
-  grid-template-columns: 1fr; /* Одна колонка */
-  grid-template-rows: auto auto; /* Дві рядки, автоматично розтягуються */
-  background: #1E1E1E;
-  box-sizing: border-box;
-  padding: 24px;
-  height: 480px;
-  width: 504px;
-  border-radius: 24px;
-}
+  .containerItem {
 
-@media only screen and (min-width: 1280px) {
-  display: grid;
-  grid-template-columns: 1fr; /* Одна колонка */
-  grid-template-rows: auto auto; /* Дві рядки, автоматично розтягуються */
-  background: #1E1E1E;
-  box-sizing: border-box;
   padding: 24px;
+  width: 284px;
+  height: 242px;
+  
+  border-radius: 16px;
+}
+}
+@media only screen and (min-width: 1280px) {
+  .containerItem {    
   height: 480px;
   width: 504px;
   border-radius: 24px;
@@ -112,31 +91,18 @@
   
   .lowerElement {
     align-self: end; 
-  justify-self: start; /* Прибити до лівого краю */ /* Прибити до лівого краю */
+  justify-self: start; 
   font-family: "Right Grotesk", sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 32px;
   line-height: 32px;
   text-align: left;
-  /*  */
-@media only screen and (min-width: 768px) {
-  align-self: end; /* Прибити до нижнього краю */
-  justify-self: start; /* Прибити до лівого краю */ /* Прибити до лівого краю */
-  font-family: "Right Grotesk", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 64px;
-  line-height: 64px;
-  text-align: left;
-}
+   }
 
 @media only screen and (min-width: 1280px) {
-  align-self: end; /* Прибити до нижнього краю */
-  justify-self: start; /* Прибити до лівого краю */ /* Прибити до лівого краю */
-  font-family: "Right Grotesk", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  .lowerElement {
+
   font-size: 64px;
   line-height: 64px;
   text-align: left;
@@ -150,21 +116,19 @@
   text-align: left;
   font-size: 12px;
   line-height: 12px;
-  /*  */
-@media only screen and (min-width: 768px) {
-  align-self: start; /* Прибити до верхнього краю */
-  justify-self: end; /* Прибити до правого краю */
-  width: 50%;  /* Прибити до правого краю */
-  text-align: left;
-  font-size: 24px;
-  line-height: 29px;
-}
+  }
+
+  @media only screen and (min-width: 768px) {
+    .upperElement {      
+      width: 50%;  
+      min-width: 128px;
+      min-height: 112px;   
+      line-height: 14px;  
+    }
+      }
 
 @media only screen and (min-width: 1280px) {
-  align-self: start; /* Прибити до верхнього краю */
-  justify-self: end; /* Прибити до правого краю */
-  width: 50%;  /* Прибити до правого краю */
-  text-align: left;
+  .upperElement {
   font-size: 24px;
   line-height: 29px;
 }
@@ -173,14 +137,6 @@
     /* color: white; */
     width: 64px;
     height: 64px;
-    /*  */
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 1280px) {
-
-}
   }
 
 

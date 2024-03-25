@@ -4,24 +4,15 @@
     background: rgb(129, 186, 37);
     padding: 60px 72px 0 72px; 
     text-align: center;
-
-    /*  */
-@media only screen and (min-width: 768px) {
-  box-sizing: border-box;
-  /* z-index: 15; */
-  width: 100%;
-  background: rgb(129, 186, 37);
-  padding: 0px 204px 120px 204px;
-  text-align: center;
 }
-
+@media only screen and (min-width: 768px) {
+  .section {
+  padding: 40px 88px 40px 88px;
+}
+}
 @media only screen and (min-width: 1280px) {
-  box-sizing: border-box;
-  /* z-index: 15; */
-  width: 100%;
-  background: rgb(129, 186, 37);
+  .section {
   padding: 0px 204px 120px 204px;
-  text-align: center;
 }
   }
   .title {
@@ -31,23 +22,18 @@
     font-size: 44px;
     line-height: 40px;  
     margin-bottom: 24px;
-
-    /*  */
-@media only screen and (min-width: 768px) {
-  font-family: "Right Grotesk", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 160px;
-  line-height: 160px;  
-  margin-bottom: 80px;
-}
-
-@media only screen and (min-width: 1280px) {
-  font-family: "Right Grotesk", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 160px;
-  line-height: 160px;  
+  }
+  @media only screen and (min-width: 768px) {
+    .title {
+    font-size: 80px;
+    line-height: 80px;  
+    margin-bottom: 60px;
+  }
+  }
+  @media only screen and (min-width: 1280px) {
+    .title {
+    font-size: 160px;
+    line-height: 160px; 
   margin-bottom: 80px;
 }
   }
@@ -59,21 +45,19 @@
     margin-left: 24px;
 
     scroll-snap-align: start;
-
-    /*  */
+  }
 @media only screen and (min-width: 768px) {
-  margin-right: 0px;
+  .slide { 
+  /* margin-right: 0px; */
   min-width: 284px;
-  height: 336px;
-  overflow: hidden;
- 
+  height: 336px; 
+  border-radius: 16px;
   margin-left: 24px;
-
-  scroll-snap-align: start;
+}
 }
 
-
 @media only screen and (min-width: 1280px) {
+  .slide { 
   margin-right: 0px;
   min-width: 240px;
   height: 280px;
@@ -89,46 +73,29 @@
     height: 100%;
     object-fit: cover;
 }
-/* .slider {
-  
-} */
+
 .slides {
-    /* display: flex; */
     transition: transform 0.5s ease; 
 
 }
 .container {
-  display: flex;   
-  
+  display: flex;    
   width: 240px;
-  /* background: yellow; */
-  /* padding: 40px 0; */
   overflow: hidden;
   overflow: auto;
   scroll-padding: 0 240px;
   scroll-snap-type: x mandatory;
-
-  /*  */
-@media only screen and (min-width: 768px) {
- 
-  width: 592px;
-  /* background: yellow; */
-  /* padding: 40px 0; */
-  overflow: hidden;
-  overflow: auto;
-  scroll-padding: 0 309px;
-  scroll-snap-type: x mandatory;
 }
-
-@media only screen and (min-width: 1280px) {
-  
-  width: 1056px;
-  /* background: yellow; */
-  /* padding: 40px 0; */
-  overflow: hidden;
-  overflow: auto;
+@media only screen and (min-width: 768px) {
+  .container {
+  width: 616px;
+  scroll-padding: 0 308px;  
+}
+}
+@media only screen and (min-width: 1280px) {  
+  .container {
+  width: 1056px;  
   scroll-padding: 0 264px;
-  scroll-snap-type: x mandatory;
 }
 }
 .container::-webkit-scrollbar {
@@ -200,15 +167,7 @@ border: none;
 
 .slidesInner {
   display: flex;
-  gap: 24px; /* Розміщення слайдів в ряд */
+  gap: 24px; 
   margin-left: -24px;
   transition: transform 0.3s ease; /* Плавний перехід між слайдами */
-  /*  */
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 1280px) {
-
-}
 }
