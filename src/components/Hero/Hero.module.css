@@ -1,7 +1,7 @@
 .section {
   box-sizing: border-box;
   width: 100%;
-  background: grey;
+  /* background: grey; */
   padding: 54px 16px 0 16px;
   color: #1e1e1e;
 }
@@ -166,7 +166,7 @@
   border: none;
   border-radius: 8px;
   background: rgba(30, 30, 30, 0.1);
-
+  color: #1e1e1e;
   font-family: "Right Grotesk", sans-serif;
   font-weight: bold;
   font-style: normal;

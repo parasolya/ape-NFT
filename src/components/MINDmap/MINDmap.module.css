@@ -201,6 +201,7 @@
   overflow: auto;
   scroll-padding: 0 240px;
   scroll-snap-type: x mandatory;
+  margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
   .container {

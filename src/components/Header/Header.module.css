@@ -19,7 +19,7 @@
     .section {
       padding: 0px 112px 0 112px;
     top: 76px;
-    max-width: 1440px;
+    width: 1440px;
   }
 }
 .wrapper {
