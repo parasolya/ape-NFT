@@ -54,17 +54,26 @@ const slides = [
 const Arts = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [transformValue, setTransformValue] = useState(0);
+  const [draggable, setDraggable] = useState(true);
+  const [slideWidth, setSlideWidth] = useState(0);
+  const [previousClientX, setPreviousClientX] = useState(0);
+  const [previousTouchX, setPreviousTouchX] = useState(0);
+
+  console.log(` slideIndex1 ${slideIndex}`);
+  console.log(previousClientX);
+  console.log(draggable);
 
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
       if (width >= 1280) {
-        setTransformValue(-slideIndex * 264);
+        setSlideWidth(264);
       } else if (width >= 768) {
-        setTransformValue(-slideIndex * 308);
+        setSlideWidth(308);
       } else {
-        setTransformValue(-slideIndex * 240);
+        setSlideWidth(240);
       }
+      setTransformValue(-slideIndex * slideWidth);
     };
 
     handleResize();
@@ -74,41 +83,54 @@ const Arts = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [slideIndex]);
+  }, [slideIndex, slideWidth]);
 
   const handleNextSlide = () => {
+    console.log("Nex");
     const newIndex = Math.min(slideIndex + 1, slides.length - 1);
+    setDraggable(false);
     setSlideIndex(newIndex);
   };
 
   const handlePrevSlide = () => {
+    console.log("Prev");
     const newIndex = Math.max(slideIndex - 1, 0);
+    console.log(newIndex);
+    setDraggable(false);
     setSlideIndex(newIndex);
   };
 
   const handleDragStart = (event, index) => {
-    event.dataTransfer.setData("index", index.toString());
+    setPreviousClientX(event.clientX);
   };
 
-  const handleTouchStart = () => {
-    const slidesInner = document.querySelector(".slidesInner");
-    if (slidesInner) {
-      slidesInner.setAttribute("draggable", "false");
-    }
+  const handleDragEnd = (event) => {
+    const deltaX = event.clientX - previousClientX;
+    const newIndex = deltaX > 0 ? slideIndex - 1 : slideIndex + 1;
+    setSlideIndex(Math.min(Math.max(newIndex, 0), slides.length - 1));
   };
 
-  const handleTouchEnd = () => {
-    const slidesInner = document.querySelector(".slidesInner");
-    if (slidesInner) {
-      slidesInner.setAttribute("draggable", "true");
-    }
+  const handleTouchStart = (event) => {
+    setPreviousTouchX(event.touches[0].clientX);
+    setDraggable(false);
   };
 
-  const handleDragEnd = ({ setSelectedPage }) => {
-    const slidesInner = document.querySelector(".slidesInner");
-    if (slidesInner) {
-      slidesInner.setAttribute("draggable", "true");
+  const handleTouchEnd = (event) => {
+    if (event.changedTouches && event.changedTouches.length > 0) {
+      const currentTouchX = event.changedTouches[0].clientX;
+      const deltaX = currentTouchX - previousTouchX;
+      const newIndex = deltaX > 0 ? slideIndex - 1 : slideIndex + 1;
+      setSlideIndex(Math.min(Math.max(newIndex, 0), slides.length - 1));
     }
+    setDraggable(true);
+  };
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+  };
+
+  const handleDragEnter = (e) => {
+    e.preventDefault();
   };
 
   return (
@@ -119,19 +141,26 @@ const Arts = () => {
           <div
             className={css.slidesInner}
             style={{ transform: `translate3d(${transformValue}px, 0, 0)` }}
-            draggable={true}
-            onTouchStart={handleTouchStart}
-            onTouchEnd={handleTouchEnd}
+            draggable={draggable}
+            onDragOver={handleDragOver}
+            onDragEnter={handleDragEnter}
+            onDragEnd={handleDragEnd}
           >
             {slides.map((slide, index) => (
               <div
                 key={index}
                 className={css.slide}
-                draggable={true}
+                draggable={draggable}
                 onDragStart={(e) => handleDragStart(e, index)}
-                onDragEnd={handleDragEnd}
+                onTouchStart={(e) => handleTouchStart(e)}
+                onTouchEnd={(e) => handleTouchEnd(e)}
               >
-                <img className={css.img} src={slide.image} alt={slide.alt} />
+                <img
+                  className={css.img}
+                  src={slide.image}
+                  alt={slide.alt}
+                  draggable="true"
+                />
               </div>
             ))}
           </div>

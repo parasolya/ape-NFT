@@ -47,7 +47,6 @@
 }
 @media only screen and (min-width: 768px) {
   .slide {
-    /* margin-right: 0px; */
     min-width: 284px;
     height: 336px;
     border-radius: 16px;
@@ -80,21 +79,16 @@
   display: flex;
   width: 240px;
   overflow: hidden;
-  overflow: auto;
-  scroll-padding: 0 240px;
-  scroll-snap-type: x mandatory;
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
   .container {
     width: 616px;
-    scroll-padding: 0 308px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .container {
     width: 1054px;
-    scroll-padding: 0 264px;
   }
 }
 .container::-webkit-scrollbar {
@@ -106,14 +100,9 @@
 
 .btnBox {
   margin-top: 24px;
-  text-align: center;
-  /*  */
-  @media only screen and (min-width: 768px) {
-  }
-
-  @media only screen and (min-width: 1280px) {
-  }
+  text-align: center;  
 }
+
 .btn {
   box-sizing: border-box;
   width: 54px;
@@ -121,16 +110,18 @@
   color: white;
   background: inherit;
   border: none;
-  /*  */
-  @media only screen and (min-width: 768px) {
-    box-sizing: border-box;
+}
 
+  @media only screen and (min-width: 768px) {
+    .btn {
+    box-sizing: border-box;
     color: white;
     background: inherit;
     border: none;
   }
-
+  }
   @media only screen and (min-width: 1280px) {
+    .btn {
     box-sizing: border-box;
     width: 48px;
     height: 30px;
@@ -146,9 +137,6 @@
   font-size: 24px;
   line-height: 30px;
   text-transform: none;
-  /*  */
-  @media only screen and (min-width: 768px) {
-  }
 }
 .prev {
   margin-right: 48px;
@@ -156,13 +144,7 @@
 
 .slidesInner {
   display: flex;
-  /* gap: 24px;  */
   margin-left: -24px;
-  transition: transform 0.3s ease;
-  
+  transition: transform 0.3s ease;  
 }
-@media only screen and (min-width: 1280px) {
-  .slidesInner {
-    gap: 0;
-  }
-}
+
